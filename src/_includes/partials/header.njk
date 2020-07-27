@@ -1,0 +1,20 @@
+<header>
+    <div class="content">
+        <div>
+            <h1 class="home">
+                <a href="{{ '/' + locale | url }}">{{ metadata.title }}</a>
+            </h1>
+        </div>
+
+        <nav>
+            {% set navPages = collections.all | eleventyNavigation | localization(locale) %}
+            <ul>
+                {%- for entry in navPages %}
+                    <li{% if entry.url == page.url %} class="active"{% endif %}>
+                        <a href="{{ entry.url | url }}">_{{ entry.title }}</a>
+                    </li>
+                {%- endfor %}
+            </ul>
+        </nav>
+    </div>
+</header>

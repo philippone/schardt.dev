@@ -1,0 +1,26 @@
+nav {
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  li {
+    font-size: 1.2rem;
+
+    &:not(:last-of-type) {
+      margin-right: var(--ps-spacing-s);
+    }
+
+    &.active {
+      a {
+        background: var(--ps-color-red);
+        padding-bottom: 4px;
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+@use './fonts/fonts';
+@use './layout';
+@use './partials/partials';
+
+:root {
+  --ps--color-primary: black;
+  --ps--color-primary-invert: white;
+  --ps--color--primary-bg: white;
+
+  --ps--color-secondary: grey;
+  --ps-color-red: #b92828;
+
+  --ps-spacing-xs: 0.5rem;
+  --ps-spacing-s: 1rem;
+  --ps-spacing-m: 2rem;
+}

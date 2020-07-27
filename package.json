@@ -1,0 +1,39 @@
+{
+  "name": "@philippone/schardt.dev",
+  "version": "1.0.0",
+  "description": "Personal Hompage of Philipp Schardt",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "eleventy",
+    "watch": "eleventy --watch && npm run sass:watch",
+    "serve": "eleventy --serve && npm run sass:watch",
+    "debug": "DEBUG=* eleventy",
+    "sass:build": "sass src/styles/styles.scss _site/styles/styles.css",
+    "sass:watch": "npm run sass:build -- --watch",
+    "fmt": "prettier --write '{./,./{assets,11ty-plugins,functions,rollup-plugins,_includes,_data}/**/}*.{json,md,js,css}'"
+  },
+  "author": "Philipp Schardt",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.11.0",
+    "@11ty/eleventy-navigation": "^0.1.6",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.1",
+    "eslint": "^7.4.0",
+    "prettier": "^2.0.5",
+    "sass": "^1.26.10",
+    "typescript": "^3.9.6",
+    "husky": "^4.2.5",
+    "moment": "2.27.0"
+  },
+  "optionalDependencies": {
+    "node-sass": "^4.12.0"
+  },
+  "private": true,
+  "engines": {
+    "node": "12.x"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "not ie <= 11"
+  ]
+}

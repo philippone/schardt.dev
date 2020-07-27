@@ -1,0 +1,27 @@
+{
+  "title": "schardt.dev",
+  "url": "https://schardt.dev/",
+  "description": "Personal homepage of Philipp Schardt",
+  "languages": [
+    {
+      "label": "DE",
+      "code": "de"
+    },
+    {
+      "label": "EN",
+      "code": "en"
+    }
+  ],
+  "author": {
+    "name": "Philipp Schardt",
+    "email": "philipp@schardt.dev",
+    "title": "UX Software Engineer",
+    "bio": "",
+    "avatar": "/assets/philipp.jpg",
+    "social": {
+      "github": "https://github.com/philippone",
+      "twitter": "https://twitter.com/_philippone",
+      "xing": ""
+    }
+  }
+}
