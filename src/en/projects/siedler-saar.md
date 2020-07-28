@@ -3,7 +3,7 @@ layout: layouts/post.njk
 title: The Settlers of the Saar
 teaser: OpenGL based network multiplayer of the settlers of catan 
 date: 2011-01-07
-tags: ["project", "study", "HBK"]
+tags: ["project", "study"]
 technologies:
   - Java
   - OpenGL (GUI)

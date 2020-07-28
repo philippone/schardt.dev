@@ -3,7 +3,7 @@ layout: layouts/post.njk
 title: Restaurant Recommender
 teaser: Recommender algorithmus and user interface based on Android
 date: 2013-05-04
-tags: ["project", "study", "HBK"]
+tags: ["project", "study"]
 technologies:
   - Java
   - Android

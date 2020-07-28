@@ -132,11 +132,25 @@ ul.post-list {
   }
 }
 
+
+.figure-container {
+    display: flex;
+}
+
+
 .tmpl-post {
-  .subnav {
+
+.subnav {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding-top: var(--ps-spacing-s);
   }
+  .prev, .next {
+    max-width: 48%;
+  }
+  .next {
+    text-align: right;
+  }
 }
+
