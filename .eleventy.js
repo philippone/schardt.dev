@@ -11,17 +11,21 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/styles/fonts");
   eleventyConfig.addPassthroughCopy("src/styles/assets");
 
-  module.exports = function (eleventyConfig) {
-    eleventyConfig.addCollection("en", function (collection) {
-      return collection.getFilteredByGlob("./src/en/*");
-    });
-  };
+  // eleventyConfig.setTemplateFormats([
+  //   "njk",
+  //   "md",
+  //   "css",
+  //   "jpg",
+  //   "png",
+  //   "webp"
+  // ]);
 
-  module.exports = function (eleventyConfig) {
-    eleventyConfig.addCollection("de", function (collection) {
-      return collection.getFilteredByGlob("./src/de/*");
-    });
-  };
+  eleventyConfig.addPassthroughCopy("src/**/*.jpg");
+  eleventyConfig.addPassthroughCopy("src/**/*.jpeg");
+  eleventyConfig.addPassthroughCopy("src/**/*.png");
+  eleventyConfig.addPassthroughCopy("src/**/*.webp");
+  eleventyConfig.addPassthroughCopy("src/**/*.svg");
+  
 
   // Nunjucks Filter based on locale
   eleventyConfig.addNunjucksFilter("localization", function (collection, locale) {

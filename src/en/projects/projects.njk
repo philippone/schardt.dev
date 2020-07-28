@@ -13,12 +13,12 @@ eleventyNavigation:
         {% endif %}
         <li>
             <article>
-            {{ post.url }}
-                <p>
-                    <time datetime="{{ post.date | date('Y-MM-DD') }}">{{ post.date | date("DD MMMM[,] Y", locale) }}</time>
-                </p>
                 <h3>
-                    <a href="{{ post.url }}">{{ post.title }} hi</a>
+                    <a href="{{ post.url }}"><span>{{ post.data.title }}</span></a>
+                    {% if post.data.teaser %}<p>{{post.data.teaser}}</p>{% endif %}
+                    <p>
+                    <time datetime="{{ post.date | date('Y-MM-DD') }}">{{ post.date | date("DD MMMM[,] Y", locale) }}</time>
+                    </p>
                 </h3>
             </article>
 

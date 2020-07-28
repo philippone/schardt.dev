@@ -9,6 +9,11 @@ templateClass: tmpl-post
     {{ content | safe }}
 </div>
 
-{# <p>
+<p>
     <time datetime="{{ post.date | date('YYYY-MM-DD') }}">{{ post.item|date("DD MMMM YYYY", locale) }}</time>
-</p> #}
+</p>
+
+{% if team %}
+teammates
+{% endif%}
+{{team}}

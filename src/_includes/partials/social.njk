@@ -1,0 +1,12 @@
+<div class="footer__social">
+{%for social, link in metadata.author.social %}
+    <span
+      class="icon"
+      style="--mask: url(/assets/icons/{{social}}.svg);"
+    >
+        <a href="{{ link }}" target="_blank" rel="me">
+            {{social}}
+        </a>
+    </span>
+{%endfor%}
+</div>
