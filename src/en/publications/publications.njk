@@ -1,0 +1,31 @@
+---
+layout: layouts/post-overview.njk
+eleventyNavigation:
+  key: publications
+  order: 3
+---
+
+<h2>Publications</h2>
+
+{% for post in collections.publication | reverse | localization(locale) %}
+    {% if loop.first %}
+        <ul class="post-list">
+        {% endif %}
+        <li>
+            <article>
+                <h3>
+                    <a href="{{ post.url }}"><span>{{ post.data.title }}</span></a>
+                    <p class="post-date">
+                        <time datetime="{{ date | date('Y-MM-DD') }}">{{ post.date | date("DD MMMM[,] Y", locale) }}</time>
+                    </p>
+                    {% if post.data.teaser %}<p class="post-teaser">{{post.data.teaser}}</p>{% endif %}
+                    
+                </h3>
+            </article>
+
+        </li>
+
+        {% if loop.last %}
+        </ul>
+    {% endif %}
+{% endfor %}

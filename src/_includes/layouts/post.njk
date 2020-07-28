@@ -3,17 +3,36 @@ layout: layouts/post-overview.njk
 templateClass: tmpl-post
 ---
 
+{% set previousPost = collections.project | localization(locale) | getPreviousCollectionItem(page) %}
+{% set nextPost = collections.project | localization(locale) | getNextCollectionItem(page) %}
+
 <h1>{{ title }}</h1>
 
-<div class="content">
-    {{ content | safe }}
-</div>
+<article>
+    <p>
+        <time datetime="{{ post.data.date | date('YYYY-MM-DD') }}">{{ date | date("DD MMMM YYYY", locale) }}</time>
+    </p>
+    <p>
+        {% if team %}
+            Team:
+            {% endif%}
+            {{team}}
+        </p>
 
-<p>
-    <time datetime="{{ post.date | date('YYYY-MM-DD') }}">{{ post.item|date("DD MMMM YYYY", locale) }}</time>
-</p>
+        {{ content | safe }}
 
-{% if team %}
-teammates
-{% endif%}
-{{team}}
+    </article>
+
+    <div class="subnav">
+        <div class="prev">
+            {%if previousPost%}
+                <a href="{{previousPost.url}}">← {{previousPost.data.title}}</a>
+            {% endif %}
+        </div>
+
+        <div class="prev">
+            {%if nextPost%}
+                <a href="{{nextPost.url}}">{{nextPost.data.title}} →</a>
+            {% endif %}
+        </div>
+    </div>

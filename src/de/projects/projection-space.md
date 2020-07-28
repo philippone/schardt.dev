@@ -1,4 +1,5 @@
 ---
+layout: layouts/post.njk
 title: Projection Space
 teaser: Verzerrungsfreie mobile Projektion
 date: 2012-07-23

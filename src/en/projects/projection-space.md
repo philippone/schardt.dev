@@ -1,9 +1,9 @@
 ---
 layout: layouts/post.njk
+tags: ['project', 'study']
+date: 2012-07-23
 title: Projection Space
 teaser: Distortion-free mobile projection
-date: 2012-07-23
-tags: ['project', 'study']
 technologies:
     - Android
     - Java
@@ -20,6 +20,3 @@ The goal of this project was to build an simple multiplayer system which can pro
 We developed an small painting game to demonstrate the capabilities of such an system. Up to two users can simultaniously draw on the wall. Depending on the distance of the user to the wall, the projection displays only the illuminated area.
 
 <iframe src="//www.youtube.com/embed/zqoZHQCqoMk" title="presentation-video" frameborder="0" allowfullscreen></iframe>
-
-
-<p><time datetime="{{ post.date | date('YYYY-MM-DD') }}">{{ post.item|date("DD MMMM YYYY", locale) }}</time></p>

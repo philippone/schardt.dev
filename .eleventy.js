@@ -20,11 +20,12 @@ module.exports = function (eleventyConfig) {
   //   "webp"
   // ]);
 
-  eleventyConfig.addPassthroughCopy("src/**/*.jpg");
-  eleventyConfig.addPassthroughCopy("src/**/*.jpeg");
-  eleventyConfig.addPassthroughCopy("src/**/*.png");
-  eleventyConfig.addPassthroughCopy("src/**/*.webp");
-  eleventyConfig.addPassthroughCopy("src/**/*.svg");
+  eleventyConfig.addPassthroughCopy("src/assets/**/*.svg");
+  eleventyConfig.addPassthroughCopy("src/assets/**/*.jpg");
+  eleventyConfig.addPassthroughCopy("src/assets/**/*.jpeg");
+  eleventyConfig.addPassthroughCopy("src/assets/**/*.png");
+  eleventyConfig.addPassthroughCopy("src/assets/**/*.webp");
+  eleventyConfig.addPassthroughCopy("src/assets/**/*.pdf");
   
 
   // Nunjucks Filter based on locale

@@ -86,7 +86,7 @@ a {
     background: var(--ps-color-red);
   }
   &:active {
-    background: yellow;
+    background: darkgoldenrod;
   }
 }
 
@@ -117,4 +117,26 @@ a {
     float: left;
     margin-right: 1rem;
     margin-bottom: 0.2rem;
+}
+
+
+ul.post-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  p.post-teaser, p.post-date {
+    margin: 0.1rem 0;
+    font-size: 0.8rem;
+    color: var(--ps--color-secondary);
+  }
+}
+
+.tmpl-post {
+  .subnav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: var(--ps-spacing-s);
+  }
 }
