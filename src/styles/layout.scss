@@ -125,7 +125,11 @@ ul.post-list {
   margin: 0;
   padding: 0;
 
-  p.post-teaser, p.post-date {
+  p.post-teaser {
+    margin: 0.1rem 0;
+    font-size: 0.8rem;
+  }
+  p.post-date {
     margin: 0.1rem 0;
     font-size: 0.8rem;
     color: var(--ps--color-secondary);

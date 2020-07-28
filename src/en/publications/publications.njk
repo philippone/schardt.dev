@@ -14,10 +14,10 @@ eleventyNavigation:
         <li>
             <article>
                 <h3>
-                    <a href="{{ post.url }}"><span>{{ post.data.title }}</span></a>
                     <p class="post-date">
                         <time datetime="{{ date | date('Y-MM-DD') }}">{{ post.date | date("DD MMMM[,] Y", locale) }}</time>
                     </p>
+                    <a href="{{ post.url }}"><span>{{ post.data.title }}</span></a>
                     {% if post.data.teaser %}<p class="post-teaser">{{post.data.teaser}}</p>{% endif %}
                     
                 </h3>
