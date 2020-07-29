@@ -19,11 +19,11 @@
     "@11ty/eleventy-navigation": "^0.1.6",
     "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.1",
     "eslint": "^7.4.0",
+    "husky": "^4.2.5",
+    "moment": "2.27.0",
     "prettier": "^2.0.5",
     "sass": "^1.26.10",
-    "typescript": "^3.9.6",
-    "husky": "^4.2.5",
-    "moment": "2.27.0"
+    "typescript": "^3.9.6"
   },
   "optionalDependencies": {
     "node-sass": "^4.12.0"

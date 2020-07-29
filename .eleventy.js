@@ -33,6 +33,10 @@ module.exports = function (eleventyConfig) {
     return collection.filter((item) => item.url.includes(locale));
   });
 
+  eleventyConfig.addNunjucksFilter('is_string', function(obj) {
+    return typeof obj == 'string';
+  });
+
   module.exports = function(eleventyConfig) {
     eleventyConfig.addLayoutAlias('post', 'layouts/post.njk');
   };

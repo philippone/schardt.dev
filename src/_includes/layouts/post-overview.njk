@@ -6,9 +6,9 @@ templateClass: tmpl-overview
 {% include "partials/header.njk" %}
 
 <main{% if templateClass %} class="{{ templateClass }}"{% endif %}>
-      <div class="content">
+      <section class="content">
             {{ content | safe }}
-      </div>
+      </section>
 </main>
 
 {% include "partials/footer.njk" %}

@@ -6,22 +6,43 @@ templateClass: tmpl-post
 {% set previousPost = collections.project | localization(locale) | getPreviousCollectionItem(page) %}
 {% set nextPost = collections.project | localization(locale) | getNextCollectionItem(page) %}
 
+<p class="post-date">
+    <time datetime="{{ date | date('Y-MM-DD') }}">{{ post.date | date("DD MMMM[,] Y", locale) }}</time>
+</p>
 <h1>{{ title }}</h1>
+{% if technologies %}
+    <ul class="post-technologies">
+        {%for t in technologies%}
+            <li>{{t}}</li>
+            {% endfor%}
+        </ul>
+    {% endif %}
 
-<article>
-    <p>
-        <time datetime="{{ post.data.date | date('YYYY-MM-DD') }}">{{ date | date("DD MMMM YYYY", locale) }}</time>
-    </p>
-    <p>
-        {% if team %}
-            Team:
-            {% endif%}
-            {{team}}
-        </p>
+    <article>
 
         {{ content | safe }}
 
     </article>
+
+    <div class="post-info">
+    {% if team %}
+            <div class="post-info__team">
+            <p>Team</p>
+            <ul>
+            {% for member in team %}
+                <li>
+                    {% if member | is_string %}
+                        <span>{{member}}</span>
+                    {% else %}
+                        <a href="{{member.url}}">{{member.name}}</a>{% endif%}
+                    </li>
+                    {% endfor%}
+                </ul>
+            </div>
+        {% endif%}
+    </div>
+
+
 
     <div class="subnav">
         <div class="prev">

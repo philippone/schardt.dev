@@ -7,7 +7,7 @@ tags: ["project", "study", "HBK"]
 technologies:
   - Processing
 team:
-  - <a href="http://christian-neurohr.de" target="_blank">Christian Neurohr</a>
+  - {name: 'Christian Neurohr', url: 'http://cneurohr.com/'}
   - Kevin Kohler
 ---
 

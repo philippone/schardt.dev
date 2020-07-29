@@ -6,7 +6,7 @@ date: 2015-04-14
 tags: ["project", "publication", "study", "hiwi"]
 appear: Proceedings of the 14th International Conference on Mobile and Ubiquitous Multimedia (Mum-15). November 30 - December 2, Linz, Austria, ACM, 2015.
 authors:
-    - Frederic Kerber
+    - { name: 'Frederic Kerber', url: 'https://www.frederickerber.de/'}
     - Philipp Schardt
     - Markus Löchtefeld
 technologies:
@@ -15,7 +15,7 @@ technologies:
     - c++
 team:
     - Dr. Markus Löchtefeld
-    - Frederic Kerber
+    - { name: 'Frederic Kerber', url: 'https://www.frederickerber.de/'}
 ---
 
 <p>WristRotate is a personalized motion gesture delimiter that allows to accurately separate involuntary motion from gesture input. Through an extensive data collection and analysis, we were able to identify a gesture that (1) is uncommon in daily life; (2) quick and easy to execute and (3) easily and reliably detectable. The gesture is executed by simply rotating the lower arm and wrist outwards and back inwards twice. We implemented a gesture recognition system based on Dynamic Time Warping to partition a stream of accelerometer readings to identify possible gestures and to classify them accordingly. In our data acquisition phase, we collected 435.1 hours of smartwatch acceleration data during everyday usage in which the WristRotate gesture has only been found twice.
