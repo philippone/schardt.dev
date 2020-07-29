@@ -7,7 +7,8 @@ templateClass: tmpl-post
 {% set nextPost = collections.project | localization(locale) | getNextCollectionItem(page) %}
 
 <p class="post-date">
-    <time datetime="{{ date | date('Y-MM-DD') }}">{{ post.date | date("DD MMMM[,] Y", locale) }}</time>
+    <time datetime="{{ date | date('Y-MM-DD') }}">{{ date | date("DD MMMM[,] Y", locale) }}</time>
+    {%if type%}<span> - </<span><span>{{type}}</span>{%endif%}
 </p>
 <h1>{{ title }}</h1>
 {% if technologies %}
@@ -17,7 +18,12 @@ templateClass: tmpl-post
             {% endfor%}
         </ul>
     {% endif %}
-
+{% if authors %}
+<p class="post-authors">{{authors}}</p>
+{% endif %}
+{% if appear %}
+<p class="post-appear">In: {{appear}}</p>
+{% endif %}
     <article>
 
         {{ content | safe }}

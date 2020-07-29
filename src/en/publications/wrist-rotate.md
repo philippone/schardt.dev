@@ -3,10 +3,11 @@ layout: layouts/post.njk
 title: Wrist Rotate
 teaser: A Personalized Motion Gesture Delimiter for Wrist-Worn Devices
 date: 2015-04-14
-tags: ["project", "publication", "study", "hiwi"]
+tags: ["publication", "study", "hiwi"]
+type: Paper
 appear: Proceedings of the 14th International Conference on Mobile and Ubiquitous Multimedia (Mum-15). November 30 - December 2, Linz, Austria, ACM, 2015.
 authors:
-    - { name: 'Frederic Kerber', url: 'https://www.frederickerber.de/'}
+    - Frederic Kerber
     - Philipp Schardt
     - Markus Löchtefeld
 technologies:
