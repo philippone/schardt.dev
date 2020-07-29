@@ -7,6 +7,7 @@
       format("woff2"),
     url("/styles/fonts/IBM-Plex-Mono/fonts/complete/woffIBMPlexMono-Regular.woff")
       format("woff");
+      font-display: swap;
 }
 
 // @font-face {
@@ -40,4 +41,5 @@
     url(/styles/fonts/lab/lab.woff) format("woff");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }

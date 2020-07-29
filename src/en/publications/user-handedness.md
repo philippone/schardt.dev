@@ -4,7 +4,9 @@ tags: ['publication', 'study']
 date: 2015-11-30
 title: Detecting Users Handedness for Ergonomic Adaptation of Mobile User Interfaces
 teaser: Preset algorithm that allows determining the users' interacting hand from their unlocking behavior
+type: Paper
 appear: Proceedings of the 14th International Conference on Mobile and Ubiquitous Multimedia (Mum-15). November 30 - December 2, Linz, Austria, ACM, 2015.
+url: https://dl.acm.org/doi/10.1145/2836041.2836066
 authors:
     - Markus Löchtefeld
     - Philipp Schardt

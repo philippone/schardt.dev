@@ -8,13 +8,17 @@ body {
   flex-direction: column;
   flex: 1 1 auto;
   width: 100%;
-  font-style: 16px;
+  font-style: var(--font-size-base);
   font-family: "IBM Plex Mono", "Open Sans", "Helvetica Neue", "Helvetica",
     "Arial", "sans-serif";
+  color: var(--ps--color-primary, black);
+  background-color: var(--ps-color-primary);
 }
 
 html {
   height: 100%;
+
+  background: url(/styles/assets/bg.jpg) repeat scroll 0% 0% transparent;
 }
 
 ::selection,
@@ -23,9 +27,28 @@ html {
   color: var(--ps--color-primary-invert);
 }
 
+#theme-toggle {
+    outline: 0;
+    background: transparent;
+    color: var(--ps--color-primary-invert);
+    display: inline-block;
+    position: absolute;
+    right: 0.5rem;
+    top: 0.5rem;
+    font-size: 0.7rem;
+    border: 1px solid transparent;
+
+    &:focus, &:hover {
+      border: 1px solid var(--ps--color-primary-invert);
+    }
+    &:active {
+      background: var(--ps-color-red);
+    }
+}
+
 header,
 footer {
-  background: url(/styles/assets/bg.jpg) repeat scroll 0% 0% transparent;
+  
   color: white;
   flex: 0 0 auto;
 }
@@ -114,8 +137,8 @@ a {
   border-radius: 50%;
   width: 8rem;
   float: left;
-  margin-right: 1rem;
-  margin-bottom: 0.2rem;
+  margin-right: var(--ps-spacing-s);
+  margin-bottom: var(--ps-spacing-xxs);
 }
 
 ul.post-list {
@@ -160,7 +183,7 @@ p.post-date {
 
   .post-appear,
   .post-authors {
-    font-size: 0.8rem;
+    font-size: var(--font-size-m);
     color: var(--ps--color-secondary);
   }
 
@@ -172,7 +195,7 @@ p.post-date {
     margin-bottom: 1rem;
 
     li {
-      border: 1px solid black;
+      border: 1px solid var(--ps--color-primary);
       display: inline-block;
       padding: 0.1rem 0.2rem;
       font-size: 0.6rem;

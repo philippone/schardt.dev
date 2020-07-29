@@ -6,6 +6,7 @@ date: 2015-04-14
 tags: ["publication", "study", "hiwi"]
 type: Paper
 appear: Proceedings of the 14th International Conference on Mobile and Ubiquitous Multimedia (Mum-15). November 30 - December 2, Linz, Austria, ACM, 2015.
+url: https://dl.acm.org/doi/10.1145/2836041.2836063
 authors:
     - Frederic Kerber
     - Philipp Schardt

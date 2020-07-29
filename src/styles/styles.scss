@@ -9,9 +9,21 @@
 
   --ps--color-secondary: grey;
   --ps-color-red: #b92828;
-
+  
+  --ps-spacing-xxs: 0.2rem;
   --ps-spacing-xs: 0.5rem;
   --ps-spacing-s: 1rem;
   --ps-spacing-m: 2rem;
   --social-icon: 1.3rem;
+
+  --font-size-base: 16px;
+  --font-size-m: 0.8rem; 
+  --font-size-l: 1rem;
+  --font-size-xl: 1.2rem;
+}
+
+.dark  {
+  --ps--color-primary: white;
+  --ps--color-primary-invert: white;
+  --ps--color--primary-bg: black;
 }

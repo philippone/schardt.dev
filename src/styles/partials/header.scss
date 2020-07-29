@@ -17,7 +17,7 @@ header {
     }
 
     li {
-      font-size: 1.2rem;
+      font-size: var(--font-size-xl);
       margin-top: 0.5rem;
 
       &:not(:last-of-type) {
@@ -27,7 +27,7 @@ header {
       &.active {
         a {
           background: var(--ps-color-red);
-          padding-bottom: 4px;
+          padding-bottom: 0.25rem;
         }
       }
     }
