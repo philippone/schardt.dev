@@ -1,0 +1,82 @@
+---
+layout: layouts/post-overview.njk
+templateClass: tmpl-vita
+eleventyNavigation:
+  key: vita
+  order: 2
+---
+
+<h2>Experience</h2>
+    <ul>
+        {% for item in work_experience | reverse %}
+            <li>
+                <div class="date">
+                    <time datetime="{{ item.start | date('Y-MM-DD') }}">{{ item.start | date("MMM Y", locale) }}</time>
+                    {% if item.end%}<span class="date-separator"> - </span><time datetime="{{ item.end | date('Y-MM-DD') }}">{{ item.end | date("MMM Y", locale) }}</time> {% endif %} 
+                </div>
+                <div class="content">
+                    <div class="title">
+                        {{item.title}}
+                    </div>
+                    <div class="employer">
+                        {{item.employer}} - {{item.location}}
+                    </div>
+                    {% if item.description %}
+                    <div class="description">
+                        {{item.description}}
+                    </div>
+                    {% endif %}
+                </div>
+            </li>
+        {% endfor%}
+    </ul>
+
+<h2>Education</h2>
+    <ul>
+        {% for item in education | reverse %}
+            <li>
+                <div class="date">
+                    <time datetime="{{ item.start | date('Y-MM-DD') }}">{{ item.start | date("MMM Y", locale) }}</time>
+                    {% if item.end%}<span class="date-separator"> - </span><time datetime="{{ item.end | date('Y-MM-DD') }}">{{ item.end | date("MMM Y", locale) }}</time> {% endif %} 
+                </div>
+                <div class="content">
+                    <div class="title">
+                        {{item.title}}
+                    </div>
+                    <div class="employer">
+                        {{item.location}}
+                    </div>
+                    {% if item.description %}
+                    <div class="description">
+                        {{item.description}}
+                    </div>
+                    {% endif %}
+                </div>
+            </li>
+        {% endfor%}
+    </ul>
+
+<h2>Honorary</h2>
+    <ul>
+        {% for item in honorary | reverse %}
+            <li>
+                <div class="date">
+                    <time datetime="{{ item.start | date('Y-MM-DD') }}">{{ item.start | date("MMM Y", locale) }}</time>
+                    {% if item.end%}<span class="date-separator"> - </span><time datetime="{{ item.end | date('Y-MM-DD') }}">{{ item.end | date("MMM Y", locale) }}</time> {% endif %} 
+                </div>
+                <div class="content">
+                    <div class="title">
+                        {{item.title}}
+                    </div>
+                    <div class="employer">
+                        {{item.location}}
+                    </div>
+                    {% if item.description %}
+                    <div class="description">
+                        {{item.description}}
+                    </div>
+                    {% endif %}
+                </div>
+            </li>
+        {% endfor%}
+    </ul>
