@@ -1,7 +1,20 @@
 {
   "title": "schardt.dev",
   "url": "https://schardt.dev/",
-  "description": "Personal homepage of Philipp Schardt",
+  "description": "Personal website of UX Software Engineer and Technical Expert Web Philipp Schardt from Saarbrücken, Saarland",
+  "keywords": [
+    "Philipp",
+    "Schardt",
+    "Philipp Schardt",
+    "Developer",
+    "Entwickler",
+    "Software Engineer",
+    "Technical Expert Web",
+    "UX", "UI",
+    "User Experience",
+    "Saarland",
+    "Saarbrücken"
+  ],
   "languages": [
     {
       "label": "DE",
