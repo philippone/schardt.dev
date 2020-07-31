@@ -10,40 +10,11 @@
   </head>
   <body>
 
-    <button type="button" id="theme-toggle" onclick="toggleTheme()">toggle dark mode</button>
+    <button type="button" id="theme-toggle">toggle dark mode</button>
 
     {{ content | safe }}
 
     <!-- Current page: {{ page.url | url }} -->
   </body>
-  <script>
-
-    const page = document.querySelector('html');
-    const isDarkTheme = sessionStorage.getItem('theme');
-    if (isDarkTheme) {
-      page
-        .classList
-        .add('dark');
-    }
-
-    /** toggle dark/light theme */
-    const toggleTheme = () => {
-
-      const isDarkTheme = sessionStorage.getItem('theme') || page
-        .classList
-        .contains('dark') || false;
-
-      if (isDarkTheme) {
-        page
-          .classList
-          .remove('dark');
-        sessionStorage.removeItem('theme');
-      } else {
-        page
-          .classList
-          .add('dark');
-        sessionStorage.setItem('theme', 'dark');
-      }
-    }
-  </script>
+  <script type="module" src="{{ '/assets/utils/theme.js' | url}}"></script>
 </html>

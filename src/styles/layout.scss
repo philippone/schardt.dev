@@ -13,6 +13,11 @@ body {
     "Arial", "sans-serif";
   color: var(--ps--color-primary, black);
   background-color: var(--ps-color-primary);
+  ;
+}
+
+.transition-bg {
+  transition: background 0.3s linear;
 }
 
 html {

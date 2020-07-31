@@ -26,6 +26,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/assets/**/*.png");
   eleventyConfig.addPassthroughCopy("src/assets/**/*.webp");
   eleventyConfig.addPassthroughCopy("src/assets/**/*.pdf");
+  eleventyConfig.addPassthroughCopy("src/assets/utils/*.js");
   
 
   // Nunjucks Filter based on locale
