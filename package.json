@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "eleventy",
+    "build": "eleventy && npm run sass:build",
     "watch": "eleventy --watch && npm run sass:watch",
     "serve": "eleventy --serve && npm run sass:watch",
     "debug": "DEBUG=* eleventy",
