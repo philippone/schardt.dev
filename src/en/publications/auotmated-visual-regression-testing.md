@@ -15,6 +15,14 @@ technologies:
     - CSS
     - Javascript
     - Storybook
+    - Playwright
+    - Pixelmatch
 ---
 
-tba
+Frontend development is hard. Adaption to the layout affects hidden parts of the layout and produce unnoticed side effects.
+
+Xight is a tool for detecting visual regressions in your applications! It compares two screenshots based on your configurations. You can test cross-browser and responsive!
+
+Since Xight is using Playwright under the hood you can test your Applications on Chromium, Firefox and Webkit! Also there are predefined resolutions and you can even add your custom sizes.
+
+<a href="https://www.npmjs.com/package/@pietsen/xight-npm" target="_blank">Xight auf NPM</a>

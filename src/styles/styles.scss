@@ -2,6 +2,7 @@
 @use './layout';
 @use './partials/partials';
 @use './pages/vita.scss';
+@use './print.scss';
 
 :root {
   --ps--color-primary: black;

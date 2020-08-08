@@ -2,7 +2,7 @@
 layout: layouts/post-overview.njk
 eleventyNavigation:
   key: projects
-  order: 2
+  order: 3
 ---
 
 <h2>Projects</h2>
@@ -14,10 +14,10 @@ eleventyNavigation:
         <li>
             <article>
                 <h3>
-                    <a href="{{ post.url }}"><span>{{ post.data.title }}</span></a>
                     <p class="post-date">
                         <time datetime="{{ date | date('Y-MM-DD') }}">{{ post.date | date("DD MMMM[,] Y", locale) }}</time>
                     </p>
+                    <a href="{{ post.url }}"><span>{{ post.data.title }}</span></a>
                     {% if post.data.teaser %}<p class="post-teaser">{{post.data.teaser}}</p>{% endif %}
                     
                 </h3>

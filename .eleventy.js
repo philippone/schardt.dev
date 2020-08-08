@@ -8,7 +8,8 @@ module.exports = function (eleventyConfig) {
 
   // Copy `css/fonts/` to `_site/css/fonts`
   // If you use a subdirectory, it’ll copy using the same directory structure.
-  eleventyConfig.addPassthroughCopy("src/styles/fonts");
+  eleventyConfig.addPassthroughCopy("src/styles/fonts/lab");
+  eleventyConfig.addPassthroughCopy("src/styles/fonts/IBM-Plex-Mono");
   eleventyConfig.addPassthroughCopy("src/styles/assets");
 
   // eleventyConfig.setTemplateFormats([
@@ -31,7 +32,7 @@ module.exports = function (eleventyConfig) {
 
   // Nunjucks Filter based on locale
   eleventyConfig.addNunjucksFilter("localization", function (collection, locale) {
-    return collection.filter((item) => item.url.includes(locale));
+    return collection.filter((item) => item.url.includes(`/${locale}/`));
   });
 
   eleventyConfig.addNunjucksFilter('is_string', function(obj) {
