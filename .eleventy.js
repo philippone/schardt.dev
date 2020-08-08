@@ -35,6 +35,16 @@ module.exports = function (eleventyConfig) {
     return collection.filter((item) => item.url.includes(`/${locale}/`));
   });
 
+  eleventyConfig.addNunjucksFilter("switchLanguageUrl", function (url, locale) {
+    if (locale === 'de') {
+      return url.replace('/de/', '/en/');
+    } else {
+      return url.replace('/en/', '/de/');
+    }
+  });
+
+  
+
   eleventyConfig.addNunjucksFilter('is_string', function(obj) {
     return typeof obj == 'string';
   });

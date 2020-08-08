@@ -1,0 +1,11 @@
+{
+  "de": {
+    "language": "Deutsch",
+    "languageSwitch": "Englische Version"
+  },
+
+  "en": {
+    "language": "English",
+    "languageSwitch": "German Version"
+  }
+}
