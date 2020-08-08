@@ -1,0 +1,50 @@
+{
+    "talks": [
+        {
+            "title": "Progressive Web Apps Overview",
+            "event": "Web Dev Internals",
+            "location": "Ergosign",
+            "date": "2020-07-17"
+        },
+        {
+            "title": "Stroybook Pseudo States Add-on",
+            "event": "Web Worker Saar Meetup",
+            "eventlink": "https://www.meetup.com/de-DE/WebWorker-Saar/events/267277110/",
+            "location": "Madco GmbH",
+            "date": "2020-01-01",
+            "slides": "/assets/talks/storybook-pseudo-states-addon.pdf"
+        },
+        {
+            "title": "Ergosign's WebDev Guidelines Introduction",
+            "event": "Web Dev Internals",
+            "location": "Ergosign",
+            "date": "2020-05-06"
+        },
+        {
+            "title": "New Web Platform Features 2019",
+            "event": "Web Dev Internals",
+            "location": "Ergosign",
+            "date": "2020-02-14"
+        },
+        {
+            "title": "Friday Morning Web Pub Quiz",
+            "event": "Web Dev Internals",
+            "location": "Ergosign",
+            "date": "2019-08-30"
+        },
+        {
+            "title": "Web Components",
+            "event": "Web Dev Internals",
+            "location": "Ergosign",
+            "date": "2019-03-15"
+        },
+        {
+            "title": "Conferences: Ng Vikings",
+            "event": "Lunch & Learn",
+            "location": "Ergosign",
+            "date": "2018-11-23"
+        }      
+    ]
+
+    
+}

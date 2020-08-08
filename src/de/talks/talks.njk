@@ -1,0 +1,35 @@
+---
+layout: layouts/post-overview.njk
+eleventyNavigation:
+  key: talks
+  order: 3
+---
+
+<h2>Talks</h2>
+
+{% for post in talks %}
+    {% if loop.first %}
+        <ul class="post-list">
+        {% endif %}
+        <li>
+            <article>
+                <h3>
+                    <p class="post-date">
+                        <time datetime="{{ date | date('Y-MM-DD') }}">{{ post.date | date("DD MMMM[,] Y", locale) }}</time>
+                    </p>
+                    {% if post.slides %}<a href="{{post.slides | url}}" target="_blank">{{ post.title }}</a>{% else %}<span>{{ post.title }}</a>{% endif %}
+                    <p class="post-date">
+                        {% if post.eventlink %}<a href="{{post.eventlink}}" target="_blank">{{post.event}}</a> {% else %} <span>{{post.event}}</span> {% endif %} ‒ <span>{{post.location}}</span>
+                    </p>
+                    {% if post.teaser %}<p class="post-teaser">{{post.teaser}}</p>{% endif %}
+
+                    
+                </h3>
+            </article>
+
+        </li>
+
+        {% if loop.last %}
+        </ul>
+    {% endif %}
+{% endfor %}

@@ -1,0 +1,18 @@
+@media print {
+  html,
+  body {
+    --ps--color-primary: black;
+    --ps--color-primary-invert: white;
+    --ps--color--primary-bg: white;
+  }
+
+  #theme-toggle {
+    display: none;
+  }
+
+  .tmpl-vita {
+    article {
+      column-count: 2;
+    }
+  }
+}
