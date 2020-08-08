@@ -1,0 +1,14 @@
+RewriteEngine On
+
+#englisch
+RewriteCond %{HTTP:Accept-Language} ^((?!de).)*en [NC]
+RewriteRule ^$ /en/ [L,R=301]
+
+#deutsch
+RewriteCond %{HTTP:Accept-Language} ^((?!en).)*de [NC]
+RewriteRule ^$ /de/ [L,R=301]
+
+# alle anderen
+RewriteRule ^$ /en/ [L,R=301]
+
+ErrorDocument 404 /404.htm
