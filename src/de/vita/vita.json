@@ -1,0 +1,150 @@
+{
+  "work_experience": [
+    {
+        "start": "2010-06-01",
+        "end": "2010-08-01",
+        "title": "Leiharbeiter",
+        "employer": "Tremonia Dienstleistungsgesellschaft mbH",
+        "location": "Saarbrücken",
+        "description": "Zur Überbrückung der Zeit zwischen Zivildienst und Studium, arbeitete ich als Leiharbeiter."
+    },
+    {
+      "start": "2011-10-01",
+      "end": "2012-02-01",
+      "title": "Hilfswissenschaftler / Tutor",
+      "employer": "Universität des Saarlandes",
+      "location": "Saarbrücken",
+      "description": "Betreuung von Übungsgruppen im Zuge der Vorlesung 'Grundlagen der Medieninformatik'",
+      "weekhours": 6
+    },
+    {
+      "start": "2012-04-01",
+      "end": "2012-08-01",
+      "title": "Hilfswissenschaftler / Tutor",
+      "employer": "Universität des Saarlandes",
+      "location": "Saarbrücken",
+      "description": "Betreuung von Übungsgruppen im Zuge der Vorlesung 'Grundlagen der Medieninformatik' und 'Ubiquitous Media'",
+      "weekhours": 6
+    },
+    {
+      "start": "2012-04-01",
+      "end": "2012-08-01",
+      "title": "Research Assistant / Tutor",
+      "employer": "Saarland University",
+      "location": "Saarbrücken",
+      "description": "Supervision and realisation of exercise groups of lecture 'Ubiquitous Media'"
+    },
+    {
+      "start": "2012-10-01",
+      "end": "2015-09",
+      "title": "Hilfswissenschaftler",
+      "employer": "DFKI",
+      "location": "Saarbrücken",
+      "description": "Forschung, Entwicklung und Design von multi-modalen Benutzerschnittstellen und Interaktionstechniken am UMTL",
+      "weekhours": 10
+    },
+    {
+      "start": "2015-10-15",
+      "end": "2016-02-29",
+      "title": "Praktikum UI Developer",
+      "employer": "Ergosign GmbH",
+      "location": "Saarbrücken",
+      "description": "Vollzeit-Praktikum als Frontend Entwickler in HTML/CSS/Javascript Projekten"
+    },
+    {
+      "start": "2016-03-01",
+      "end": "2017-08-30",
+      "title": "Werkstudent UI Developer",
+      "employer": "Ergosign GmbH",
+      "location": "Saarbrücken",
+      "description": "Unterstützung des Web Development Teams als Werkstudent neben dem Studium",
+      "weekhours": 8
+    },
+    {
+      "start": "2016-05-01",
+      "end": "2017-09-30",
+      "title": "Hilfswissenschaftler",
+      "employer": "DFKI",
+      "location": "Saarbrücken",
+      "description": "Forschung, Entwicklung und Design von multi-modalen Benutzerschnittstellen und Interaktionstechniken am Ubiquitous Media Technologie Lab (UMTL)",
+      "weekhours": 12
+    },
+    {
+      "start": "2017-03-01",
+      "end": "2017-04-13",
+      "title": "Software Developer",
+      "employer": "Consal GmbH",
+      "location": "Saarbrücken",
+      "description": "Entwicklung eines Asset Managment Systems zur internen Verwaltung in der vorlesungsfreien Zeit"
+    },
+    {
+      "start": "2017-10-15",
+      "title": "UX Software Engineer",
+      "employer": "Ergosign GmbH",
+      "location": "Saarbrücken",
+      "description": "Architektur-Design und agile Entwicklung von modernen User Interfaces und Benutzerschnittstellen"
+    },
+    {
+      "start": "2019-10-01",
+      "title": "Technical Expert Web",
+      "employer": "Ergosign GmbH",
+      "location": "Saarbrücken",
+      "description": "Forschung und Qualitätssicherung der Web Abteilung, Defnition der Best Practices zu Entwicklung, Dokumentation, Testing und Tool-Chain"
+    }
+  ],
+  "internship": [
+    {
+      "start": "2006-06-01",
+      "end": "2006-07-01",
+      "title": "School internship in printing press",
+      "location": "'Hauser Druck', Geislautern"
+    }
+  ],
+  "education": [
+    {
+      "start": "2001-08-01",
+      "end": "2009-08-01",
+      "title": "Allgemeine Hochschulreife",
+      "location": "Warndtgymnasium, Geislautern",
+      "grade": "2,3"
+    },
+    {
+      "start": "2010-10-01",
+      "end": "2014-04-01",
+      "title": "B.Sc in Medieninformatik",
+      "location": "Universität des Saarlandes, Saarbrücken",
+      "grade": "2,0",
+      "description": "Human Computer Interaction, Ubiquitous Computing, User Interface Design",
+      "thesis": "Sensor-based hand posture recognition to develop dynamic adaptive user interfaces on smartphones"
+    },
+    {
+      "start": "2014-04-01",
+      "end": "2017-12-12",
+      "title": "M.Sc. in Medieninformatik",
+      "location": "Universität des Saarlandes, Saarbrücken",
+      "grade": "1,3",
+      "description": "Machine Learning, Human Computer Interaction, Interactive Systems",
+      "thesis": "Towards an Ambient Assistive System Using Wrist-Worn Human Activity Recognition"
+    }
+  ],
+  "honorary": [
+    {
+      "start": "2009-08-01",
+      "end": "2010-04-01",
+      "title": "Zivildienst",
+      "location": "Wohnstift Reppersberg, Saarbrücken"
+    },
+    {
+      "start": "2014-10-01",
+      "end": "2017-12-12",
+      "title": "Studentisches Mitglied im Prüfungsausschuss Medieninformatik",
+      "location": "Universität des Saarlandes, Saarbrücken"
+    },
+    {
+      "start": "2014-05-01",
+      "title": "Digitalisierung-Beauftragter",
+      "location": "Fußballverein SV 08 Ludweiler",
+      "description": "Vorstandsmitglied, Homepage, Kommunikation, Social Media, Datenschutz"
+    }
+  ]
+}

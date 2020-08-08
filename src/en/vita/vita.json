@@ -49,13 +49,21 @@
             "description": "Besides my studies, I supported the web development team in development of modern user interfaces"
         },
         {
-            "start": "2016-03-01",
+            "start": "2016-05-01",
             "end": "2017-09-30",
             "title": "Research Assistant",
             "employer": "German Research Center for Artificial Intelligence (DFKI)",
             "location": "Saarbrücken",
             "description": "Research, design and development of multi-modal interfaces with a focus on Machine Learning at the Ubiquitous Media Technologie Lab."
         },
+        {
+            "start": "2017-03-01",
+            "end": "2017-04-13",
+            "title": "Software Developer",
+            "employer": "Consal GmbH",
+            "location": "Saarbrücken",
+            "description": "Development of an Asset Managment Systems during non-lecture period"
+          },
         {
             "start": "2017-10-15",
             "title": "UX Software Engineer",
