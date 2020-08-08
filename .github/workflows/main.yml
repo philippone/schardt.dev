@@ -39,11 +39,12 @@ jobs:
       # Runs a set of commands using the runners shel
       - name: ftp-upload
         # use older version to support --delete
-        uses: kevinpainchaud/simple-ftp-deploy-action@v1.1.0
-        with:
-          ftp_host: ftp://${{ secrets.FTP_HOST }}:${{ secrets.FTP_PORT }}
-          ftp_username: ${{ secrets.FTP_USERNAME }}
-          ftp_password: ${{ secrets.FTP_PASSWORD }}
-          local_source_dir: "_site"
-          dist_target_dir: "."
-          delete: "true"
+        uses: SamKirkland/FTP-Deploy-Action@2.0.0
+        env:
+          FTP_SERVER: ${{ secrets.FTP_SERVER }}
+          PORT: ${{ secrets.FTP_PORT }}
+          FTP_USERNAME: ${{ secrets.FTP_USER }}
+          FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
+          local_dir: "_site"
+          remote_dir: "."
+          ARGS: --delete --verbose
