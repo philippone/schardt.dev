@@ -37,13 +37,9 @@ jobs:
     steps:
       # Runs a set of commands using the runners shel
       - name: ftp-upload
-        # use older version to support --delete
-        uses: SamKirkland/FTP-Deploy-Action@2.0.0
-        env:
-          FTP_SERVER: ${{ secrets.FTP_SERVER }}
-          PORT: ${{ secrets.FTP_PORT }}
-          FTP_USERNAME: ${{ secrets.FTP_USER }}
-          FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
-          local_dir: "_site"
-          remote_dir: "."
-          ARGS: --delete --verbose
+        uses: SamKirkland/FTP-Deploy-Action@3.1.1
+        with:
+          ftp-server: ftp://${{ secrets.FTP_SERVER }}:${{ secrets.FTP_PORT }}
+          ftp-username: ${{ secrets.FTP_USER }}
+          ftp-password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: "_site"
