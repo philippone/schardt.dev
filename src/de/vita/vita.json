@@ -27,14 +27,6 @@
       "weekhours": 6
     },
     {
-      "start": "2012-04-01",
-      "end": "2012-08-01",
-      "title": "Research Assistant / Tutor",
-      "employer": "Saarland University",
-      "location": "Saarbrücken",
-      "description": "Supervision and realisation of exercise groups of lecture 'Ubiquitous Media'"
-    },
-    {
       "start": "2012-10-01",
       "end": "2015-09",
       "title": "Hilfswissenschaftler",
@@ -111,7 +103,7 @@
     {
       "start": "2010-10-01",
       "end": "2014-04-01",
-      "title": "B.Sc in Medieninformatik",
+      "title": "B.Sc. in Medieninformatik",
       "location": "Universität des Saarlandes, Saarbrücken",
       "grade": "2,0",
       "description": "Human Computer Interaction, Ubiquitous Computing, User Interface Design",
