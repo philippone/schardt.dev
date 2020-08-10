@@ -44,7 +44,7 @@ In diesem Paper wird eine interaktive formverändernde Lampe gezeigt, die durch 
 
 <p>Zusätzlich soll die Lampe in das Design eines zukünftigen Wohnraumes passen. Das Verändern der Form und Lichtintensität soll zudem leicht zu steuern sein. </p>
 
-<iframe width="700" height="395" src="//www.youtube.com/embed/C0F6C4qbjwY" frameborder="0" allowfullscreen></iframe>
+<iframe  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"  width="700" height="395" src="//www.youtube.com/embed/C0F6C4qbjwY" frameborder="0" allowfullscreen></iframe>
 
 <div class="figure-container">
     <figure>

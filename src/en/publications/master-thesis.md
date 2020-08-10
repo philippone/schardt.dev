@@ -54,4 +54,4 @@ study gave a first impression about the Human-Computer-Interaction.
 
 In the following video, you can see how the annotation tool is working:
 
-<iframe width="700" height="395" src="https://www.youtube-nocookie.com/embed/0dunvQrrctc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"  width="700" height="395" src="https://www.youtube-nocookie.com/embed/0dunvQrrctc" frameborder="0"  allowfullscreen></iframe>

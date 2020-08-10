@@ -12,4 +12,4 @@ technologies:
 
 In this workshop at the College of Fine Arts (HBK Saar), we edited the grphic novel of the artist Shaun Tan and translated it into an movie. All movies were presented on an 10m x 2m canvas.
 
-<iframe width="700" height="395" src="//www.youtube.com/embed/mYtrgbtRylQ" frameborder="0" allowfullscreen></iframe>
+<iframe  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"  width="700" height="395" src="//www.youtube.com/embed/mYtrgbtRylQ" frameborder="0" allowfullscreen></iframe>

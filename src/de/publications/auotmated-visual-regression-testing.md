@@ -25,4 +25,4 @@ Xight ist ein Tool, das durch visuelle Regressionstests solche Fauxpas borwserü
 
 Durch dieses Werkzeug soll die Codequalität von Ergosigngesteigert und Wartungsarbeiten am Code verringert werden.
 
-<a href="https://www.npmjs.com/package/@pietsen/xight-npm" target="_blank">Xight auf NPM</a>
+<a href="https://www.npmjs.com/package/@pietsen/xight-npm" target="_blank" rel="noopener">Xight auf NPM</a>

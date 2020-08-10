@@ -33,4 +33,4 @@ Die Erkennung von Aktivitäten des täglichen Lebens nur mit einem am Handgelenk
 
 In dem folgenden Video ist beispielhaft gezeigt, wie das Labeling Tool funktioniert:
 
-<iframe width="700" height="395" src="https://www.youtube-nocookie.com/embed/0dunvQrrctc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"  width="700" height="395" src="https://www.youtube-nocookie.com/embed/0dunvQrrctc" frameborder="0" allowfullscreen></iframe>

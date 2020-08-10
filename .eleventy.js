@@ -11,8 +11,9 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/styles/fonts/lab");
   eleventyConfig.addPassthroughCopy("src/styles/fonts/IBM-Plex-Mono");
   eleventyConfig.addPassthroughCopy("src/styles/assets");
+  eleventyConfig.addPassthroughCopy("src/favicon.ico");
   eleventyConfig.addPassthroughCopy("src/.htaccess");
-
+  
   // eleventyConfig.setTemplateFormats([
   //   "njk",
   //   "md",

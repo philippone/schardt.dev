@@ -17,4 +17,4 @@ This sculpture provided the context of the project. It should be an interactive 
 
 We installed an Geo-Caching point at the location. The game is a mix of questions, puzzles and hidden pictures about the artist and his work. If the player could solve all puzzles he got the coordinates as result.
 
-<iframe src="//www.youtube.com/embed/vFeTTUSYfc4" title="game-video" frameborder="0" allowfullscreen></iframe>
+<iframe  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"  src="//www.youtube.com/embed/vFeTTUSYfc4" title="game-video" frameborder="0" allowfullscreen></iframe>

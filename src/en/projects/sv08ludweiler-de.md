@@ -20,12 +20,12 @@ The site was given a modern, responsive theme in material design, so that the si
 
 To ease administration, fußball.de widgets for each team were integrated, so that the games, results and tables do not have to be updated manually. In order to be able to automatically display the next game of a team (for which there is no widget), a widget from fupa.de was integrated on the start page.
 
-The page is availalable at <a href="https://sv08ludweiler.de" target="_blank">sv08ludweiler.de</a>.
+The page is availalable at <a href="https://sv08ludweiler.de" target="_blank" rel="noopener">sv08ludweiler.de</a>.
 
 <div class="figure-container">
 
 <figure>
-<a href="{{'/assets/projects/sv08ludweiler-de/ludweiler-homepage-desktop.jpg' | url}}" target="_blank">
+<a href="{{'/assets/projects/sv08ludweiler-de/ludweiler-homepage-desktop.jpg' | url}}" target="_blank" rel="noopener">
     <img src="{{'/assets/projects/sv08ludweiler-de/ludweiler-homepage-desktop.jpg' | url}}"  width="200" itemprop="thumbnail" alt="desktop version" />
 </a>
 <figcaption itemprop="caption description">Desktop version</figcaption>
@@ -34,7 +34,7 @@ The page is availalable at <a href="https://sv08ludweiler.de" target="_blank">sv
 <div class="figure-seperator"></div>
 
 <figure>
-<a href="{{'/assets/projects/sv08ludweiler-de/ludweiler-homepage.jpg' | url}}" target="_blank">
+<a href="{{'/assets/projects/sv08ludweiler-de/ludweiler-homepage.jpg' | url}}" target="_blank" rel="noopener">
     <img src="{{'/assets/projects/sv08ludweiler-de/ludweiler-homepage.jpg' | url}}"  width="200" itemprop="thumbnail" alt="mobile version" />
 </a>
 <figcaption itemprop="caption description">Mobile version</figcaption>

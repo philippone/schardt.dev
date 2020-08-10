@@ -12,7 +12,7 @@ technologies:
 ---
 
 <figure>
-      <a href="{{'/assets/projects/siedler-saar/match.jpg' | url}}" target="_blank" >
+      <a href="{{'/assets/projects/siedler-saar/match.jpg' | url}}" target="_blank" rel="noopener" >
           <img src="{{'/assets/projects/siedler-saar/match.jpg' | url}}" alt="match" />
       </a>
       <figcaption">Spiel mit 4 Spielern</figcaption>

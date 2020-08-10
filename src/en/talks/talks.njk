@@ -17,9 +17,9 @@ eleventyNavigation:
                     <p class="post-date">
                         <time datetime="{{ date | date('Y-MM-DD') }}">{{ post.date | date("DD MMMM[,] Y", locale) }}</time>
                     </p>
-                    {% if post.slides %}<a href="{{post.slides | url}}" target="_blank">{{ post.title }}</a>{% else %}<span>{{ post.title }}</a>{% endif %}
+                    {% if post.slides %}<a href="{{post.slides | url}}" target="_blank" rel="noopener">{{ post.title }}</a>{% else %}<span>{{ post.title }}</a>{% endif %}
                     <p class="post-date">
-                        {% if post.eventlink %}<a href="{{post.eventlink}}" target="_blank">{{post.event}}</a> {% else %} <span>{{post.event}}</span> {% endif %} ‒ <span>{{post.location}}</span>
+                        {% if post.eventlink %}<a href="{{post.eventlink}}" target="_blank" rel="noopener">{{post.event}}</a> {% else %} <span>{{post.event}}</span> {% endif %} ‒ <span>{{post.location}}</span>
                     </p>
                     {% if post.teaser %}<p class="post-teaser">{{post.teaser}}</p>{% endif %}
 

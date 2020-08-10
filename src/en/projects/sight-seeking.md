@@ -20,4 +20,4 @@ team:
 
  The goal of the game is to place the sights at the correct location and orientation on the card. Depending on the distance to the correct location, the user earns points. In the second modus, the user can put an sight on the surface and get further information about it.
 
-<iframe title="video" src="//www.youtube.com/embed/3WbDKXHvskU" frameborder="0" allowfullscreen></iframe>
+<iframe  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"  title="video" src="//www.youtube.com/embed/3WbDKXHvskU" frameborder="0" allowfullscreen></iframe>

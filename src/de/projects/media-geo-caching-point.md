@@ -16,4 +16,4 @@ team:
 <p>Die Statur stellt das Fundatment des Projekts dar. Es sollte ein interaktives Spiel werden, welches von mehreren Personen gleichzeitig auf dem in den Sockel der Skulptur integrierten Multitouch Display spielbar ist.</p>
 <p>Wir präparierten einen Geo-Caching Punkt am Ausstellungsort. Das Spiel selbst ist ein Mix von Fragen, Puzzeln und Suchbildern über den Künstler und seine Arbeiten. Nachdem die Spieler alles gelöst haben, bekommen sie die Koordinaten als Ergebnis.</p>
 
-<iframe src="//www.youtube.com/embed/vFeTTUSYfc4" title="game-video" frameborder="0" allowfullscreen></iframe>
+<iframe  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"  src="//www.youtube.com/embed/vFeTTUSYfc4" title="game-video" frameborder="0" allowfullscreen></iframe>

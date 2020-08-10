@@ -12,6 +12,6 @@ technologies:
 
 Für meinen Großcousin habe ich ein Shopware System aufgesetzt und ein Theme für Version 6 angepasst, sodass es seinen Bedürfnissen entspricht.
 
-Die Seite ist unter <a href="https://www.bastelwerkstatt-mb.de/" target="_blank">bastelwerkstatt-mb.de</a> erreichbar.
+Die Seite ist unter <a href="https://www.bastelwerkstatt-mb.de/" target="_blank" rel="noopener">bastelwerkstatt-mb.de</a> erreichbar.
 
-Das Theme liegt in <a href="https://github.com/philippone/Bastelwerkstatt" target="_blank">Github</a>.
+Das Theme liegt in <a href="https://github.com/philippone/Bastelwerkstatt" target="_blank" rel="noopener">Github</a>.

@@ -20,7 +20,7 @@ team:
 ---
 
 <figure>
-      <a href="{{'/assets/projects/utopya/Utopya.png' | url}}" target="_blank">
+      <a href="{{'/assets/projects/utopya/Utopya.png' | url}}" target="_blank" rel="noopener">
           <img src="{{'/assets/projects/utopya/Utopya.png' | url}}" alt="Utopya"/>
       </a>
       <figcaption>Utopya playground</figcaption>
@@ -28,14 +28,14 @@ team:
 
 Utopya is an interactive installation which is a product of an interdisciplinary seminar at the Saarland University and the College of Fine Arts (HBK Saar). In cooperation with three fellow students of university and HBK, we developed an interactive installation for the Saarlaendischen Rundfunk. We created an jungle world in which up to four users concurrently play with the objects. For instance they can affect the plants or frighten the animals.
 
-<a href="{{'/assets/projects/utopya/Dokumentation.pdf' | url}}" target="_blank">Detailed description (in german)</a>
+<a href="{{'/assets/projects/utopya/Dokumentation.pdf' | url}}" target="_blank" rel="noopener">Detailed description (in german)</a>
 
 <figure>
-      <a href="{{'/assets/projects/utopya/utopya_cover.png' | url}}" target="_blank">
+      <a href="{{'/assets/projects/utopya/utopya_cover.png' | url}}" target="_blank" rel="noopener">
           <img src="{{'/assets/projects/utopya/utopya_cover.png' | url}}" alt="Cover" />
       </a>
       <figcaption>Cover</figcaption>
 </figure>
 
 
-<iframe src="https://www.youtube.com/embed/ama_H-hB7Xs" title="video" frameborder="0" allowfullscreen></iframe
+<iframe  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"  src="https://www.youtube.com/embed/ama_H-hB7Xs" title="video" frameborder="0" allowfullscreen></iframe

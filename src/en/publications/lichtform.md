@@ -44,7 +44,7 @@ In this paper we present an interactive shape changing light object that can be 
 <p>Besides that the lamp has to please the eye and fit into the interior design of the room. Controlling shape and intensity over some kind of remote control should certainly be simple for the resident. 
 </p>
 
-<iframe width="700" height="395" src="//www.youtube.com/embed/C0F6C4qbjwY" frameborder="0" allowfullscreen></iframe>
+<iframe  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"  width="700" height="395" src="//www.youtube.com/embed/C0F6C4qbjwY" frameborder="0" allowfullscreen></iframe>
 
 <div class="figure-container">
     <figure>

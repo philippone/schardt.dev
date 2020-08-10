@@ -25,4 +25,4 @@ Xight is a tool for detecting visual regressions in your applications! It compar
 
 Since Xight is using Playwright under the hood you can test your Applications on Chromium, Firefox and Webkit! Also there are predefined resolutions and you can even add your custom sizes.
 
-<a href="https://www.npmjs.com/package/@pietsen/xight-npm" target="_blank">Xight auf NPM</a>
+<a href="https://www.npmjs.com/package/@pietsen/xight-npm" target="_blank" rel="noopener">Xight auf NPM</a>
