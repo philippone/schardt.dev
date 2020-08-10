@@ -2,15 +2,15 @@
   "name": "@philippone/schardt.dev",
   "version": "1.0.0",
   "description": "Personal Hompage of Philipp Schardt",
-  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "eleventy && npm run sass:build",
+    "build": "eleventy && npm run sass:build && npm run build:sw",
     "watch": "eleventy --watch && npm run sass:watch",
-    "serve": "eleventy --serve && npm run sass:watch",
+    "serve": "eleventy --serve && npm run sass:watch && npm run build:sw",
     "debug": "DEBUG=* eleventy",
     "sass:build": "sass src/styles/styles.scss _site/styles/styles.css",
     "sass:watch": "npm run sass:build -- --watch",
+    "build:sw": "workbox injectManifest workbox-config.js",
     "fmt": "prettier --write '{./,./{assets,11ty-plugins,functions,rollup-plugins,_includes,_data}/**/}*.{json,md,js,css}'"
   },
   "author": "Philipp Schardt",
@@ -22,7 +22,8 @@
     "husky": "^4.2.5",
     "moment": "^2.27.0",
     "prettier": "^2.0.5",
-    "sass": "^1.26.10"
+    "sass": "^1.26.10",
+    "workbox-cli": "^5.1.3"
   },
   "optionalDependencies": {
     "node-sass": "^4.14.1"

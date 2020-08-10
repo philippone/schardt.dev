@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ renderData.title or title or metadata.title }}</title>
     <meta name="Description" content="{{ renderData.description or description or metadata.description }}">
-    <meta name="keywords" content="{{metadata.keywords}}" />
+    <meta name="keywords" content="{{metadata.keywords}}"/>
+    <meta name="theme-color" content="#150909"/>
+    <link rel="apple-touch-icon" href="{{'/assets/pwa/icons/icon-192x192.png' | url }}">
+    <link rel='manifest' href="{{'/' + (locale or 'en')  + '/manifest.json' | url }}">
     <link rel="stylesheet" href="{{ '/styles/styles.css' | url }}">
   </head>
   <body>
@@ -16,5 +19,16 @@
 
     <!-- Current page: {{ page.url | url }} -->
   </body>
+  <script>
+    // Check that service workers are supported
+    if ('serviceWorker' in navigator) {
+      // Use the window load event to keep the page load performant
+      window.addEventListener('load', () => {
+        navigator
+          .serviceWorker
+          .register('{{'/sw.js' | url }}');
+      });
+    }
+  </script>
   <script type="module" src="{{ '/assets/utils/theme.js' | url}}"></script>
 </html>

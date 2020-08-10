@@ -1,9 +1,9 @@
 ---
 layout: layouts/home.njk
-permalink: 404.html
+permalink: offline.html
 eleventyExcludeFromCollections: true
 ---
-# 404 - not found!!?
+# Offline?!!
 
 ### Isses nid schardt?
 

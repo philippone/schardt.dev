@@ -13,6 +13,9 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/styles/assets");
   eleventyConfig.addPassthroughCopy("src/favicon.ico");
   eleventyConfig.addPassthroughCopy("src/.htaccess");
+  eleventyConfig.addPassthroughCopy("src/de/manifest.json");
+  eleventyConfig.addPassthroughCopy("src/en/manifest.json");
+ 
   
   // eleventyConfig.setTemplateFormats([
   //   "njk",
