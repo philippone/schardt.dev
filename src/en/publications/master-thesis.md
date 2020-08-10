@@ -51,3 +51,7 @@ to reliably model the behaviour of the user and to infer routines. It is a first
 towards an Ambient Assistive System that can support the users in their tasks.
 The recording tool allows us to start further investigation in that field and the
 study gave a first impression about the Human-Computer-Interaction.
+
+In the following video, you can see how the annotation tool is working:
+
+<iframe width="700" height="395" src="https://www.youtube-nocookie.com/embed/0dunvQrrctc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
