@@ -5,7 +5,7 @@
     "short_name": "schardt.dev",
     "scope": "/",
     "display": "minimal-ui",
-    "start_url": "de/",
+    "start_url": "/de",
     "background_color": "#150909",
     "theme_color": "#150909",
     "description": "Persönliche Homepage von Philipp Schardt",
