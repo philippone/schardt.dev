@@ -6,7 +6,7 @@
         "title": "Leiharbeiter",
         "employer": "Tremonia Dienstleistungsgesellschaft mbH",
         "location": "Saarbrücken",
-        "description": "Zur Überbrückung der Zeit zwischen Zivildienst und Studium, arbeitete ich als Leiharbeiter."
+        "description": "Zur Überbrückung der Zeit zwischen Zivildienst und Studium, arbeitete ich als Hilfsarbeiter"
     },
     {
       "start": "2011-10-01",
@@ -14,7 +14,7 @@
       "title": "Hilfswissenschaftler / Tutor",
       "employer": "Universität des Saarlandes",
       "location": "Saarbrücken",
-      "description": "Betreuung von Übungsgruppen im Zuge der Vorlesung 'Grundlagen der Medieninformatik'",
+      "description": "Betreuung von Übungsgruppen im Zuge der Vorlesung 'Grundlagen der Medieninformatik' des Medieninformatik Studiengangs",
       "weekhours": 6
     },
     {
@@ -23,7 +23,7 @@
       "title": "Hilfswissenschaftler / Tutor",
       "employer": "Universität des Saarlandes",
       "location": "Saarbrücken",
-      "description": "Betreuung von Übungsgruppen im Zuge der Vorlesung 'Grundlagen der Medieninformatik' und 'Ubiquitous Media'",
+      "description": "Betreuung von Übungsgruppen im Zuge der Vorlesung 'Ubiquitous Media' des Medieninformatik Studiengangs",
       "weekhours": 6
     },
     {
@@ -32,7 +32,7 @@
       "title": "Hilfswissenschaftler",
       "employer": "DFKI",
       "location": "Saarbrücken",
-      "description": "Forschung, Entwicklung und Design von multi-modalen Benutzerschnittstellen und Interaktionstechniken am UMTL",
+      "description": "Forschung, Entwicklung und Design von multi-modalen Benutzerschnittstellen und Interaktionstechniken am Ubiquitous Media Technologie Lab (UMTL) unter der Letiung von Prof. Dr. Antonio Krüger </br> Betreuer: Prof. Dr. Markus Löchtefeld",
       "weekhours": 10
     },
     {
@@ -58,7 +58,7 @@
       "title": "Hilfswissenschaftler",
       "employer": "DFKI",
       "location": "Saarbrücken",
-      "description": "Forschung, Entwicklung und Design von multi-modalen Benutzerschnittstellen und Interaktionstechniken am Ubiquitous Media Technologie Lab (UMTL)",
+      "description": "Forschung, Entwicklung und Design von multi-modalen Benutzerschnittstellen und Interaktionstechniken am Ubiquitous Media Technologie Lab (UMTL) unter der Letiung von Prof. Dr. Antonio Krüger </br> Betreuer: Frederik Wiehr",
       "weekhours": 12
     },
     {
@@ -97,26 +97,25 @@
       "start": "2001-08-01",
       "end": "2009-08-01",
       "title": "Allgemeine Hochschulreife",
-      "location": "Warndtgymnasium, Geislautern",
-      "grade": "2,3"
+      "location": "Warndtgymnasium, Geislautern"
     },
     {
       "start": "2010-10-01",
       "end": "2014-04-01",
       "title": "B.Sc. in Medieninformatik",
       "location": "Universität des Saarlandes, Saarbrücken",
-      "grade": "2,0",
       "description": "Human Computer Interaction, Ubiquitous Computing, User Interface Design",
-      "thesis": "Sensor-based hand posture recognition to develop dynamic adaptive user interfaces on smartphones"
+      "thesis": "Sensor-based hand posture recognition to develop dynamic adaptive user interfaces on smartphones",
+      "thesislink": "/publications/bachelor-thesis/"
     },
     {
       "start": "2014-04-01",
       "end": "2017-12-12",
       "title": "M.Sc. in Medieninformatik",
       "location": "Universität des Saarlandes, Saarbrücken",
-      "grade": "1,3",
       "description": "Machine Learning, Human Computer Interaction, Interactive Systems",
-      "thesis": "Towards an Ambient Assistive System Using Wrist-Worn Human Activity Recognition"
+      "thesis": "Towards an Ambient Assistive System Using Wrist-Worn Human Activity Recognition",
+      "thesislink": "/publications/master-thesis/"
     }
   ],
   "honorary": [

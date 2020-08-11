@@ -59,6 +59,11 @@ eleventyNavigation:
                                     {{item.description}}
                                 </div>
                             {% endif %}
+                            {% if item.thesis %}
+                                <div class="description">
+                                    Thesis: <a href="{{ '/en' + item.thesislink | url }}">{{item.thesis}}</a>
+                                </div>
+                            {% endif %}
                         </div>
                     </li>
                     {% endfor%}
