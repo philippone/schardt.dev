@@ -10,9 +10,8 @@
     "debug": "DEBUG=* eleventy",
     "sass:build": "sass src/styles/styles.scss _site/styles/styles.css",
     "sass:watch": "npm run sass:build -- --watch",
-    "build:sw": "workbox injectManifest workbox-config.js",
-    "fmt": "prettier --write '{./,./{assets,11ty-plugins,functions,rollup-plugins,_includes,_data}/**/}*.{json,md,js,css}'"
-  },
+    "build:sw": "workbox injectManifest workbox-config.js"
+    },
   "author": "Philipp Schardt",
   "devDependencies": {
     "@11ty/eleventy": "^0.11.0",
