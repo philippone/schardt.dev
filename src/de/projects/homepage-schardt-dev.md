@@ -19,7 +19,7 @@ repo: https://github.com/philippone/schardt.dev
 
 Auf meinem alten Webserver wurde vom Betreiber die PHP Version erhöht und die Webseite unter [philipptschardt.net](https://philippschardt.net) funktionierte nicht mehr richtig, da die API zum Datenbankzugriff nicht mehr erlaubt war.
 
-Deshlab enschied ich mich meine Webseite neu aufzusetzen und so robust wie möglich zu gestalten. Das heißt sie soll so wenig wie möglich von anderen Systemen, Frameworks oder Versionen von Programmiersprachen abhänig sein. Da ich auch keine dynamischen Inhalte habe, konnte ich mich von der Datenabnk trennen und die komplette Webseite statisch bauen.
+Deshlab enschied ich mich meine Webseite neu aufzusetzen und so robust wie möglich zu gestalten. Das heißt sie soll so wenig wie möglich von anderen Systemen, Frameworks oder Versionen von Programmiersprachen abhänig sein. Da ich auch keine dynamischen Inhalte habe, konnte ich mich von der Datenbank trennen und die komplette Webseite statisch bauen.
 
 Die Liste an Features, die ich unterstützen wollte ist folgende:
 

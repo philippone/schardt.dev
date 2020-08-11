@@ -12,8 +12,6 @@ technologies:
     - Vue
     - React
     - Lit-Html
-
-
 ---
 
 [Storybook](https://storybook.js.org/) ist ein Open Source Tool das den Entwicklungsprozess organisiert und es erlaubt sich bei der UI-Entwicklung isoliert auf eine Komponente zu konzentrieren. Es bietet Unterstützung für viele gängige Frameworks wie React, Angular, Vue oder auch Web Components. Zudem kann eine „Live“-Dokumentation erstellt werden und die Stories können zum Testen verwendet werden.

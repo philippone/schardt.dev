@@ -14,8 +14,7 @@ technologies:
     - Docker
 ---
 
-
-xDesk ist eine App, die von <a href="https://www.ergosign.de/" target="_blank" ref="noopener"> Ergosign</a> entwickelt wurde. Mit der App können die Mitarbeiterinnen und Mitarbeitern bequem von zu Hause aus oder unterwegs einen Arbeitsplatz im Büro zu buchen und beim Eintreffen im Büro an ihrem Platz einchecken. Mehr Informationen gibt es in dem <a href="https://www.ergosign.de/de/news/2020/news-xdesk.html" target="_blank" ref="noopener">Newsartikel von Ergosign</a>
+xDesk ist eine App, die von <a href="https://www.ergosign.de/" target="_blank" ref="noopener"> Ergosign</a> entwickelt wurde. Mit der App können die Mitarbeiterinnen und Mitarbeitern bequem von zu Hause aus oder unterwegs einen Arbeitsplatz im Büro zu buchen und beim Eintreffen im Büro an ihrem Platz einchecken. Mehr Informationen gibt es in dem <a href="https://www.ergosign.de/de/news/2020/news-xdesk.html" target="_blank" ref="noopener">Newsartikel von Ergosign</a>.
 
 Die App ist mit Google's Framework <a href="https://flutter.dev/" target="_blank" ref="noopener"> Flutter</a> entwickelt. Im Backend laufen in Docker Containern eine PostgreSQL Datenbank und ein Node Express Server der eine REST Schnittstelle zur Verfügung stellt. Der große Vorteil von Flutter im Vergleich zu nativen IOS und Android Implementation ist, dass Flutter für jede mobile aber auch desktop Plattform, wie MacOS und Windows, aus einer gemeinsamen Codebasis heraus gebaut werden kann und damit auf jeder Plattform performant ausführbar ist.
 
@@ -24,7 +23,7 @@ Progressive Web Apps folgen einem ähnlichen Ansatz innerhalb der Web Plattform.
 In meiner Freizeit habe ich deshalb das Experiment gewagt, die xDesk App als Progressive Web App nachzubauen. Dazu sollte sie folgenden Anforderungen  erfüllen:
 
 - Installierbar
-- Offline-Support (Bundle + Assets + Get Requests) via Workbox
+- Offline-Support (Bundle + Assets + Get Requests)
 - Speichern der Login Daten
 - Notifications
 - QR Code Erkennung zum Einchecken
@@ -78,7 +77,7 @@ Zur Umsetzung der Anforderungen wurden die folgenden Schnittstellen verwendet:
 - PWA Manifest zur Auffindbarkeit und Installierbarkeit
 - Service Worker mit Caching Strategien der Requests und Assets mit Workbox
 - Credentials API zum Speichern der Einlogg-Daten
-- Task Scheduling + Notifications um eine Benachrichtigung am Buchungstag anzuzeigen und den Nutzer zu erinnern einzuchecken0
+- Task Scheduling + Notifications um eine Benachrichtigung am Buchungstag anzuzeigen und den Nutzer zu erinnern einzuchecken
 - Media Devices API zur Nutzung der Kamera
 - Shape Detection zur Erkennung des QR-Code (only Chrome; für ander Browser wir dein Polyfill geladen)
 - NFC wird von Android gelesen und öffnet eine Webseite, in diesem Fall die PWA Check in Seite, die den Nutzer automatisch einloggt, ähnlich dem QR Code 

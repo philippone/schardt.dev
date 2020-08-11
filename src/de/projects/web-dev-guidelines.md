@@ -13,7 +13,7 @@ technologies:
 
 Die Web Dev Guidelines sind eine zentrale, interne Anlaufstelle für Entwickler bei Ergosign. Darin werden entwicklungsrelevante Themen, Best Practices und Prozesse definiert und dokumentiert.
 Als Plattform dient dabei [Vuepress](https://vuepress.vuejs.org/). Dies ist ein statischer Seitengernerator, der auf Vue basiert. 
-Dies stellt die leichte Bedienung und Erweiterbarkeit sowie eine hohe Performacne der vorgerenderten HTMO Seiten sicher.
+Dies stellt die leichte Bedienung und Erweiterbarkeit sowie eine hohe Performance der vorgerenderten HTML Seiten sicher.
 
 <figure>
       <a href="{{'/assets/projects/web-dev-guidelines/dev-guide.jpg' | url}}">
