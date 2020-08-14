@@ -11,4 +11,4 @@ RewriteRule ^$ /de/ [L,R=301]
 # alle anderen
 RewriteRule ^$ /en/ [L,R=301]
 
-ErrorDocument 404 /404.htm
+ErrorDocument 404 /404.html
