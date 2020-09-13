@@ -5,6 +5,8 @@
 @use './print.scss';
 
 :root {
+  color-scheme: light dark;
+
   --ps--color-primary: black;
   --ps--color-primary-invert: white;
   --ps--color--primary-bg: white;
