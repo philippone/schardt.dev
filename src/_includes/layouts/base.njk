@@ -3,7 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ renderData.title or title or metadata.title }}</title>
+    {% if renderData.title %}
+        <title>{{ renderData.title }} — schardt.dev</title>
+        {% elif title %}
+        <title>{{ title }} — schardt.dev</title>
+        {% elif metadata.title %}
+        <title>{{ metadata.title }}</title>
+    {% endif %}
     <meta name="Description" content="{{ renderData.description or description or metadata.description }}">
     <meta name="keywords" content="{{metadata.keywords}}"/>
     <meta name="theme-color" content="#150909"/>
