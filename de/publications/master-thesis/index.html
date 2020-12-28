@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <title>Towards an Ambient Assistive System Using Wrist-Worn Human Activity Recognition — schardt.dev</title>
+        
+    <meta name="Description" content="Personal website of UX Software Engineer and Technical Expert Web Philipp Schardt from Saarbrücken, Saarland">
+    <meta name="keywords" content="Philipp,Schardt,Philipp Schardt,Developer,Entwickler,Software Engineer,Technical Expert Web,UX,UI,User Experience,Saarland,Saarbrücken"/>
+    <meta name="theme-color" content="#150909"/>
+    <meta name="color-scheme" content="light dark"/>
+    <link rel="apple-touch-icon" href="/schardt.dev/assets/pwa/icons/icon-192x192.png">
+    <link rel='manifest' href="/de/schardt.dev/manifest.json">
+    <link rel="stylesheet" href="/schardt.dev/styles/styles.css">
+  </head>
+  <body>
+
+    <button type="button" id="theme-toggle">toggle dark mode</button>
+
+    
+<header>
+    <section class="content">
+        <div>
+            <h1 class="home">
+                <a href="/de">schardt.dev</a>
+            </h1>
+        </div>
+
+        <nav>
+            
+            <ul>
+                    <li>
+                        <a class="link" href="/schardt.dev/de/">about</a>
+                    </li>
+                    <li>
+                        <a class="link" href="/schardt.dev/de/vita/">vita</a>
+                    </li>
+                    <li>
+                        <a class="link" href="/schardt.dev/de/projects/">projects</a>
+                    </li>
+                    <li>
+                        <a class="link" href="/schardt.dev/de/publications/">publications</a>
+                    </li>
+                    <li>
+                        <a class="link" href="/schardt.dev/de/talks/">talks</a>
+                    </li>
+            </ul>
+        </nav>
+    </section>
+</header>
+
+<main class="tmpl-post">
+      <section class="content">
+            
+
+
+
+<p class="post-date">
+    <time datetime="2017-12-12">12 Dezember, 2017</time>
+    <span> - </<span><span>Masterarbeit</span>
+</p>
+<h1>Towards an Ambient Assistive System Using Wrist-Worn Human Activity Recognition</h1>
+
+    <ul class="post-technologies">
+        
+            <li>Machine Learning</li>
+            
+            <li>Tensorflow</li>
+            
+            <li>Keras</li>
+            
+            <li>Android</li>
+            
+            <li>HTML</li>
+            
+            <li>CSS</li>
+            
+            <li>Javascript</li>
+            
+            <li>AngularJs</li>
+            
+            <li>Django</li>
+            
+        </ul>
+    
+
+
+    <article>
+
+        <p>Die Überalterung der Bevölkerung ist einer der bedeutendsten Trends des einundzwanzigsten Jahrhunderts. Die Menschen haben den Wunsch, so lange wie möglich unabhängig zu leben. Mit der Entwicklung neuer Technologien ergeben sich Möglichkeiten, die Menschen bei ihren alltäglichen Aufgaben und Aktivitäten zu unterstützen. Der Forschungsbereich &quot;Ambient Assistive Living&quot; (AAL) erforscht den Einsatz dieser Technologien zur Steigerung des Wohlbefindens und des unabhängigen Lebens der Menschen. Zur Unterstützung der Benutzer ist es wichtig zu wissen was sie tun und in geeigneter Weise zu reagieren. Insbesondere im Zusammenhang mit Smart Home Environments (SHE) wäre es interessant, langfristige Unterstützung zu leisten, wie z.B. die Überwachung des Gesundheitszustands und Empfehlungen zu geben, um die gesunden Verhaltensweisen der Menschen trotz beginnender Alterserscheinungen beizubehalten. Die Generierung des Kontextbewusstseins über den Benutzer, insbesondere die Modellierung des Verhaltens zur Schaffung eines Ambient Assistant Systems (AAS) ist jedoch immer noch eine Herausforderung.</p>
+<p>Basierend auf einem Deep Neuronal Network (DNN) habe ich untersucht, wie ein Human Activity Recognition (HAR)-System zur Klassifizierung von Aktivitäten des täglichen Lebens im Haushaltskontext funktioniert. Um solche Systeme zugänglicher und erschwinglicher zu machen, verwendeten wir nur ein am Handgelenk getragenen Bewegungssensor aus dem in der öffentlich verfügbaren OPPORTUNITY-Datensatz. Zur weiteren Untersuchung wurde ein Aufzeichnungs- und Annotationstool implementiert, um die mühsame Aufgabe der Erfassung und Beschriftung von Sensordaten zu erleichtern. Das Werkzeug erlaubt es, eigene Aufzeichnungen mit fortgeschrittenen Sensoren zu erstellen, Labels leicht hinzuzufügen und im Klassifikator zu verwenden. Darüber hinaus wurde die Akzeptanz eines AAS mit am Handgelenk getragenem HAR in einer Wizard-of-Oz-Benutzerstudie evaluiert.</p>
+<p>Das implementierte HAR System wurde sowohl mit kurzen Aktivitäten als auch mit lang andauernden Aktivitäten des täglichen Lebens evaluiert. Bei Tests mit einfachen kurzen Aktivitäten erkannte der Klassifikator nur 41,79%, während bei der Untersuchung der interessanteren lang andauernden Aktivitäten die Genauigkeitsrate auf 68,25% stieg. Die Benutzerstudie ergab, dass das geplante System Verbesserungen der Kontrollierbarkeit und der Privatsphäre benötigt, um von den Teilnehmern besser akzeptiert zu werden. Die Verbesserungen wurden in der Arbeit als Design-Richtlinien vorgestellt, die beim Entwurf einer AAS berücksichtigt werden sollten.</p>
+<p>Die Erkennung von Aktivitäten des täglichen Lebens nur mit einem am Handgelenk getragenen Bewegungssensor zeigt das Potenzial von DNN. Die Erkennungsrate ist jedoch noch nicht hoch genug, um das Verhalten des Benutzers zuverlässig zu modellieren und Routinen abzuleiten. Es ist ein erster Schritt hin zu einem Ambient Assistive System, das die Benutzer bei ihren Aufgaben unterstützen kann. Das Aufzeichnungswerkzeug erlaubt es uns, weitere Untersuchungen in diesem Bereich zu beginnen, und die Studie gab einen ersten Eindruck über die Mensch-Computer-Interaktion mit einem AAS.</p>
+<p>In dem folgenden Video ist beispielhaft gezeigt, wie das Labeling Tool funktioniert:</p>
+<iframe  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"  width="700" height="395" src="https://www.youtube-nocookie.com/embed/0dunvQrrctc" frameborder="0" allowfullscreen></iframe>
+
+    </article>
+
+    <div class="post-info">
+    
+    </div>
+
+
+
+    <div class="subnav">
+        <div class="prev">
+            
+        </div>
+
+        <div class="next">
+            
+        </div>
+    </div>
+      </section>
+</main>
+
+<footer>
+    <div class="footer__bio">
+    <div class="footer__bio__avatar">
+        <img src="/schardt.dev/assets/philipp.jpg" alt="philipp">
+    </div>
+    <div class="footer__bio__info">
+        <span>Philipp Schardt</span>
+        <span class="footer__bio__info__title">UX Software Engineer</span>
+        <span class="footer__bio__info__title">Technology Expert Web</span>
+    </div>
+</div>
+    <div class="footer__social">
+
+    <span
+      class="icon"
+      style="--mask: url(/assets/icons/mail.svg);"
+    >
+        <a href="mailto:mail@schardt.dev" rel="noopener" target="_blank" rel="noopener" rel="me">
+            mail
+        </a>
+    </span>
+
+    <span
+      class="icon"
+      style="--mask: url(/assets/icons/github.svg);"
+    >
+        <a href="https://github.com/philippone" rel="noopener" target="_blank" rel="noopener" rel="me">
+            github
+        </a>
+    </span>
+
+    <span
+      class="icon"
+      style="--mask: url(/assets/icons/twitter.svg);"
+    >
+        <a href="https://twitter.com/_philippone" rel="noopener" target="_blank" rel="noopener" rel="me">
+            twitter
+        </a>
+    </span>
+
+    <span
+      class="icon"
+      style="--mask: url(/assets/icons/xing.svg);"
+    >
+        <a href="https://www.xing.com/profile/Philipp_Schardt4" rel="noopener" target="_blank" rel="noopener" rel="me">
+            xing
+        </a>
+    </span>
+
+</div>
+    <div class="footer__nav">
+        <a href="/en/publications/master-thesis/"> Englische Version</a> 
+        |
+        <a href="/de/schardt.dev/impress">Impress</a> 
+ 
+   
+</div>
+</footer>
+
+    <!-- Current page: /schardt.dev/de/publications/master-thesis/ -->
+  </body>
+  <script>
+    // Check that service workers are supported
+    if ('serviceWorker' in navigator) {
+      // Use the window load event to keep the page load performant
+      window.addEventListener('load', () => {
+        navigator
+          .serviceWorker
+          .register('/schardt.dev/sw.js');
+      });
+    }
+  </script>
+  <script type="module" src="/schardt.dev/assets/utils/theme.js"></script>
+</html>

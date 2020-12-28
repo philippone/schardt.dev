@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <title>Storybook Pseudo States Add-on — schardt.dev</title>
+        
+    <meta name="Description" content="Personal website of UX Software Engineer and Technical Expert Web Philipp Schardt from Saarbrücken, Saarland">
+    <meta name="keywords" content="Philipp,Schardt,Philipp Schardt,Developer,Entwickler,Software Engineer,Technical Expert Web,UX,UI,User Experience,Saarland,Saarbrücken"/>
+    <meta name="theme-color" content="#150909"/>
+    <meta name="color-scheme" content="light dark"/>
+    <link rel="apple-touch-icon" href="/schardt.dev/assets/pwa/icons/icon-192x192.png">
+    <link rel='manifest' href="/de/schardt.dev/manifest.json">
+    <link rel="stylesheet" href="/schardt.dev/styles/styles.css">
+  </head>
+  <body>
+
+    <button type="button" id="theme-toggle">toggle dark mode</button>
+
+    
+<header>
+    <section class="content">
+        <div>
+            <h1 class="home">
+                <a href="/de">schardt.dev</a>
+            </h1>
+        </div>
+
+        <nav>
+            
+            <ul>
+                    <li>
+                        <a class="link" href="/schardt.dev/de/">about</a>
+                    </li>
+                    <li>
+                        <a class="link" href="/schardt.dev/de/vita/">vita</a>
+                    </li>
+                    <li>
+                        <a class="link" href="/schardt.dev/de/projects/">projects</a>
+                    </li>
+                    <li>
+                        <a class="link" href="/schardt.dev/de/publications/">publications</a>
+                    </li>
+                    <li>
+                        <a class="link" href="/schardt.dev/de/talks/">talks</a>
+                    </li>
+            </ul>
+        </nav>
+    </section>
+</header>
+
+<main class="tmpl-post">
+      <section class="content">
+            
+
+
+
+<p class="post-date">
+    <time datetime="2019-08-03">03 August, 2019</time>
+    
+</p>
+<h1>Storybook Pseudo States Add-on</h1>
+
+    <ul class="post-technologies">
+        
+            <li>Web</li>
+            
+            <li>StorybookJs</li>
+            
+            <li>Typescript</li>
+            
+            <li>Angular</li>
+            
+            <li>Vue</li>
+            
+            <li>React</li>
+            
+            <li>Lit-Html</li>
+            
+        </ul>
+    
+
+
+    <article>
+
+        <p><a href="https://storybook.js.org/">Storybook</a> ist ein Open Source Tool das den Entwicklungsprozess organisiert und es erlaubt sich bei der UI-Entwicklung isoliert auf eine Komponente zu konzentrieren. Es bietet Unterstützung für viele gängige Frameworks wie React, Angular, Vue oder auch Web Components. Zudem kann eine „Live“-Dokumentation erstellt werden und die Stories können zum Testen verwendet werden.
+In den letzten Jahren ist es zum Industrie-Standard geworden und hat auch bei Ergosign die intern entwicklete UX Library abgelöst, die ähnliche Funktionalität für AngularJS und Angular geboten hat.</p>
+<p>Die Basisfunktionalität von Storybook kann über sogenannte Add-ons erweitert werden, sodass die Entwickler weitere Werkzeuge zur Hand haben. Beispielsweise bietet das Viewport Add-on die Möglichkeit die Komponente schnell in verschiedenen Browsergrößen (Smartphone, Tablet, Desktop) darzustellen.</p>
+<p>Das Storybook Pseudo States Add-on erweitert die Funktionalität von Storybook dahingehend, dass die Komponente in den verschiedenen Pseudo States (:hover, :focus, :active, :visited, :dis-abled, :checked, etc) gleichzeitig dargestellt werden. Zudem können auch HTML-Attribute (readonly, valid, etc) sowie Javascript Properties bzw. framework-spezifische deklarative Properties (selected, big-version, etc) aktiviert werden. Welche Status eine Komponente darstellen soll, kann leicht über eine Konfiguration in einer Story definiert werden.</p>
+<figure>
+      <a href="/schardt.dev/assets/projects/storybook-pseudo-states-addon/addon-example.jpg">
+          <img src="/schardt.dev/assets/projects/storybook-pseudo-states-addon/addon-example.jpg"alt="Beispiel Stroy" />
+      </a>
+      <figcaption > Beispiel-Stroy</figcaption>
+</figure>
+<p>Diese übersichtliche Darstellung macht einen Abgleich mit den Designanforderungen für den Entwickler, aber auch bei Design Reviews leichter, da nicht alle Status manuell herbeigeführt werden müssen. Außerdem ist dadurch eine leichte Einbindung in Tools zum automatisierten visuellen Regressiontesten möglich.</p>
+<p>Das Add-on wurde im August 2019 in der Focus Time bei Ergosign begonnen sowie ab Oktober 2019 im Zuge meiner Rolle als Technology Expert Web weiterentwickelt. Aktuell steht es als Open Source Tool in dem Github Repository von Ergosign für alle zur Verfügung.</p>
+<p>Zudem wurde das Tool von mir auf einem Web-Worker Meet-up zum Thema Storybook vorgestellt und ist auf reges Interesse gestoßen.</p>
+<ul>
+<li><a href="https://github.com/Ergosign/storybook-addon-pseudo-states" rel="noopener" target="_blank">Github Repo</a></li>
+<li><a href="https://philippone.github.io/angular-ci-storybook-pseudo-states-example/?path=/story/simple-button--simple-button" rel="noopener" target="_blank">Live Demo in Angular</a></li>
+</ul>
+
+
+    </article>
+
+    <div class="post-info">
+    
+    </div>
+
+
+
+    <div class="subnav">
+        <div class="prev">
+            
+                <a href="/de/projects/bastelwerkstatt-mb/">← Bastelwerkstatt MB Shop</a>
+            
+        </div>
+
+        <div class="next">
+            
+                <a href="/de/projects/web-dev-guidelines/">Web Dev Guidelines →</a>
+            
+        </div>
+    </div>
+      </section>
+</main>
+
+<footer>
+    <div class="footer__bio">
+    <div class="footer__bio__avatar">
+        <img src="/schardt.dev/assets/philipp.jpg" alt="philipp">
+    </div>
+    <div class="footer__bio__info">
+        <span>Philipp Schardt</span>
+        <span class="footer__bio__info__title">UX Software Engineer</span>
+        <span class="footer__bio__info__title">Technology Expert Web</span>
+    </div>
+</div>
+    <div class="footer__social">
+
+    <span
+      class="icon"
+      style="--mask: url(/assets/icons/mail.svg);"
+    >
+        <a href="mailto:mail@schardt.dev" rel="noopener" target="_blank" rel="noopener" rel="me">
+            mail
+        </a>
+    </span>
+
+    <span
+      class="icon"
+      style="--mask: url(/assets/icons/github.svg);"
+    >
+        <a href="https://github.com/philippone" rel="noopener" target="_blank" rel="noopener" rel="me">
+            github
+        </a>
+    </span>
+
+    <span
+      class="icon"
+      style="--mask: url(/assets/icons/twitter.svg);"
+    >
+        <a href="https://twitter.com/_philippone" rel="noopener" target="_blank" rel="noopener" rel="me">
+            twitter
+        </a>
+    </span>
+
+    <span
+      class="icon"
+      style="--mask: url(/assets/icons/xing.svg);"
+    >
+        <a href="https://www.xing.com/profile/Philipp_Schardt4" rel="noopener" target="_blank" rel="noopener" rel="me">
+            xing
+        </a>
+    </span>
+
+</div>
+    <div class="footer__nav">
+        <a href="/en/projects/storybook-pseudo-states-addon/"> Englische Version</a> 
+        |
+        <a href="/de/schardt.dev/impress">Impress</a> 
+ 
+   
+</div>
+</footer>
+
+    <!-- Current page: /schardt.dev/de/projects/storybook-pseudo-states-addon/ -->
+  </body>
+  <script>
+    // Check that service workers are supported
+    if ('serviceWorker' in navigator) {
+      // Use the window load event to keep the page load performant
+      window.addEventListener('load', () => {
+        navigator
+          .serviceWorker
+          .register('/schardt.dev/sw.js');
+      });
+    }
+  </script>
+  <script type="module" src="/schardt.dev/assets/utils/theme.js"></script>
+</html>

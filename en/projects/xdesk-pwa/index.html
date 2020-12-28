@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <title>xDesk PWA — schardt.dev</title>
+        
+    <meta name="Description" content="Personal website of UX Software Engineer and Technical Expert Web Philipp Schardt from Saarbrücken, Saarland">
+    <meta name="keywords" content="Philipp,Schardt,Philipp Schardt,Developer,Entwickler,Software Engineer,Technical Expert Web,UX,UI,User Experience,Saarland,Saarbrücken"/>
+    <meta name="theme-color" content="#150909"/>
+    <meta name="color-scheme" content="light dark"/>
+    <link rel="apple-touch-icon" href="/schardt.dev/assets/pwa/icons/icon-192x192.png">
+    <link rel='manifest' href="/en/schardt.dev/manifest.json">
+    <link rel="stylesheet" href="/schardt.dev/styles/styles.css">
+  </head>
+  <body>
+
+    <button type="button" id="theme-toggle">toggle dark mode</button>
+
+    
+<header>
+    <section class="content">
+        <div>
+            <h1 class="home">
+                <a href="/en">schardt.dev</a>
+            </h1>
+        </div>
+
+        <nav>
+            
+            <ul>
+                    <li>
+                        <a class="link" href="/schardt.dev/en/">about</a>
+                    </li>
+                    <li>
+                        <a class="link" href="/schardt.dev/en/vita/">vita</a>
+                    </li>
+                    <li>
+                        <a class="link" href="/schardt.dev/en/projects/">projects</a>
+                    </li>
+                    <li>
+                        <a class="link" href="/schardt.dev/en/publications/">publications</a>
+                    </li>
+                    <li>
+                        <a class="link" href="/schardt.dev/en/talks/">talks</a>
+                    </li>
+            </ul>
+        </nav>
+    </section>
+</header>
+
+<main class="tmpl-post">
+      <section class="content">
+            
+
+
+
+<p class="post-date">
+    <time datetime="2020-06-03">03 June, 2020</time>
+    
+</p>
+<h1>xDesk PWA</h1>
+
+    <ul class="post-technologies">
+        
+            <li>Web</li>
+            
+            <li>Web Components</li>
+            
+            <li>PostgreSql</li>
+            
+            <li>NodeJS</li>
+            
+        </ul>
+    
+
+
+    <article>
+
+        <p>xDesk is an app developed by <a href="https://www.ergosign.de/" target="_blank" ref="noopener"> Ergosign</a>. With the app, employees can conveniently book a workplace in the office from home or on the road and check in at their desk when they arrive at the office. More information is available in the <a href="https://www.ergosign.de/de/news/2020/news-xdesk.html" target="_blank" ref="noopener">news article from Ergosign</a>.</p>
+<p>The app is developed with Google's framework <a href="https://flutter.dev/" target="_blank" ref="noopener"> Flutter</a>. In the backend, a PostgreSQL database and a Node Express Server which provides a REST interface are running in Docker Containers. The big advantage of Flutter compared to native IOS and Android implementations is that Flutter can be built from a common code base for any mobile or desktop platform, like MacOS and Windows, and can therefore be executed on any platform with high performance.</p>
+<p>Progressive Web Apps follow a similar approach within the web platform. In recent years more and more interfaces have been made available to bring the web closer to the native implementation of different platforms. These include offline support and installability as well as notification or sensor data access.</p>
+<p>Therefore, I have started an experiment in my spare time. I wanted to implement the xDesk App as a Progressive Web App. For this purpose, it should meet the following requirements:</p>
+<ul>
+<li>Installable</li>
+<li>Offline support (bundle + assets + get requests)</li>
+<li>Saving the login data</li>
+<li>Notifications</li>
+<li>QR Code recognition for check-in</li>
+<li>NFC recognition for check-in</li>
+</ul>
+<p>At the time of my development start, the final design was not yet fixed. Therefore, the design of the PWA differs from the official app. Nevertheless, I was more interested in comparing how you can emulate a native app and which APIs are available.</p>
+<div class="figure-container">
+    <figure >
+        <a href="/schardt.dev/assets/projects/x-desk/book.png">
+            <img src="/schardt.dev/assets/projects/x-desk/book.png" alt="buchen" style="border: 1px solid var(--ps--color-primary)" />
+        </a>
+        <figcaption>Book</figcaption>
+    </figure>
+    <div class="figure-seperator"></div>
+    <div class="figure-seperator"></div>
+    <figure >
+      <a href="/schardt.dev/assets/projects/x-desk/bookings.png">
+          <img src="/schardt.dev/assets/projects/x-desk/bookings.png" alt="bookings" style="border: 1px solid var(--ps--color-primary)" />
+      </a>
+      <figcaption>Bookings</figcaption>
+    </figure>
+    <div class="figure-seperator"></div>
+    <div class="figure-seperator"></div>
+    <figure >
+      <a href="/schardt.dev/assets/projects/x-desk/checkin.png">
+          <img src="/schardt.dev/assets/projects/x-desk/checkin.png" alt="checkin" style="border: 1px solid var(--ps--color-primary)" />
+      </a>
+      <figcaption>Checkin</figcaption>
+    </figure>
+</div>
+<p>The architecture of the application builds on top of the existing backend. The PWA consists of the following components:</p>
+<ul>
+<li>Following the guidelines of <a href="https://open-wc.org/" target="_blank" ref="noopener"> Open Web Components</a></li>
+<li>Web Components (Lit-Html, Lit element)</li>
+<li>Single page application using the Vaadin router</li>
+<li>CSS only (no preprocessor)</li>
+<li>Custom CSS Properties</li>
+<li>Shadow Dom Encapsulation</li>
+<li>Typescript Support</li>
+<li>Es-dev-server during development</li>
+<li>Build with Rollup</li>
+<li>Tools:
+<ul>
+<li>EsLint</li>
+<li>Karma</li>
+<li>precompiled storybook</li>
+</ul>
+</li>
+</ul>
+<p>The following interfaces were used to implement the requirements:</p>
+<ul>
+<li>PWA Manifest for discoverability and installability</li>
+<li>Service Worker with caching strategies of requests and assets with Workbox</li>
+<li>Credentials API to store the login data</li>
+<li>Task Scheduling + Notifications to display a notification on the booking day and remind the user to check in</li>
+<li>Media Devices API for using the camera</li>
+<li>Shape Detection to detect the QR-Code (only Chrome; for other browsers a polyfill will be loaded)</li>
+<li>NFC is read by Android and opens a web page, in this case the PWA Check in page, which automatically logs the user in, similar to the QR Code</li>
+</ul>
+<p>Over time, the app has been expanded (with the support of Ergosign) to include a user and location and room management, which also allows the capacity of the rooms to be quickly adjusted.</p>
+<div class="figure-container">
+    <figure >
+        <a href="/schardt.dev/assets/projects/x-desk/user.png">
+            <img src="/schardt.dev/assets/projects/x-desk/user.png" alt="user managment" style="border: 1px solid var(--ps--color-primary)" />
+        </a>
+        <figcaption>User Managment</figcaption>
+    </figure>
+    <div class="figure-seperator"></div>
+    <div class="figure-seperator"></div>
+    <figure >
+      <a href="/schardt.dev/assets/projects/x-desk/locations.png">
+          <img src="/schardt.dev/assets/projects/x-desk/locations.png" alt="location managment" style="border: 1px solid var(--ps--color-primary)" />
+      </a>
+      <figcaption>Location Managment</figcaption>
+    </figure>
+</div>
+
+
+    </article>
+
+    <div class="post-info">
+    
+    </div>
+
+
+
+    <div class="subnav">
+        <div class="prev">
+            
+                <a href="/en/projects/web-dev-guidelines/">← Web Dev Guidelines</a>
+            
+        </div>
+
+        <div class="next">
+            
+                <a href="/en/projects/homepage-schardt-dev/">schardt.dev →</a>
+            
+        </div>
+    </div>
+      </section>
+</main>
+
+<footer>
+    <div class="footer__bio">
+    <div class="footer__bio__avatar">
+        <img src="/schardt.dev/assets/philipp.jpg" alt="philipp">
+    </div>
+    <div class="footer__bio__info">
+        <span>Philipp Schardt</span>
+        <span class="footer__bio__info__title">UX Software Engineer</span>
+        <span class="footer__bio__info__title">Technology Expert Web</span>
+    </div>
+</div>
+    <div class="footer__social">
+
+    <span
+      class="icon"
+      style="--mask: url(/assets/icons/mail.svg);"
+    >
+        <a href="mailto:mail@schardt.dev" rel="noopener" target="_blank" rel="noopener" rel="me">
+            mail
+        </a>
+    </span>
+
+    <span
+      class="icon"
+      style="--mask: url(/assets/icons/github.svg);"
+    >
+        <a href="https://github.com/philippone" rel="noopener" target="_blank" rel="noopener" rel="me">
+            github
+        </a>
+    </span>
+
+    <span
+      class="icon"
+      style="--mask: url(/assets/icons/twitter.svg);"
+    >
+        <a href="https://twitter.com/_philippone" rel="noopener" target="_blank" rel="noopener" rel="me">
+            twitter
+        </a>
+    </span>
+
+    <span
+      class="icon"
+      style="--mask: url(/assets/icons/xing.svg);"
+    >
+        <a href="https://www.xing.com/profile/Philipp_Schardt4" rel="noopener" target="_blank" rel="noopener" rel="me">
+            xing
+        </a>
+    </span>
+
+</div>
+    <div class="footer__nav">
+        <a href="/de/projects/xdesk-pwa/"> German Version</a> 
+        |
+        <a href="/en/schardt.dev/impress">Impress</a> 
+ 
+   
+</div>
+</footer>
+
+    <!-- Current page: /schardt.dev/en/projects/xdesk-pwa/ -->
+  </body>
+  <script>
+    // Check that service workers are supported
+    if ('serviceWorker' in navigator) {
+      // Use the window load event to keep the page load performant
+      window.addEventListener('load', () => {
+        navigator
+          .serviceWorker
+          .register('/schardt.dev/sw.js');
+      });
+    }
+  </script>
+  <script type="module" src="/schardt.dev/assets/utils/theme.js"></script>
+</html>

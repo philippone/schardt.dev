@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <title>Philipp Schardt | UX Software Engineer | Technology Expert Web — schardt.dev</title>
+        
+    <meta name="Description" content="Personal website of UX Software Engineer and Technical Expert Web Philipp Schardt from Saarbrücken, Saarland">
+    <meta name="keywords" content="Philipp,Schardt,Philipp Schardt,Developer,Entwickler,Software Engineer,Technical Expert Web,UX,UI,User Experience,Saarland,Saarbrücken"/>
+    <meta name="theme-color" content="#150909"/>
+    <meta name="color-scheme" content="light dark"/>
+    <link rel="apple-touch-icon" href="/schardt.dev/assets/pwa/icons/icon-192x192.png">
+    <link rel='manifest' href="/en/schardt.dev/manifest.json">
+    <link rel="stylesheet" href="/schardt.dev/styles/styles.css">
+  </head>
+  <body>
+
+    <button type="button" id="theme-toggle">toggle dark mode</button>
+
+    
+<header>
+    <section class="content">
+        <div>
+            <h1 class="home">
+                <a href="/en">schardt.dev</a>
+            </h1>
+        </div>
+
+        <nav>
+            
+            <ul>
+                    <li class="active">
+                        <a class="link" href="/schardt.dev/en/">about</a>
+                    </li>
+                    <li>
+                        <a class="link" href="/schardt.dev/en/vita/">vita</a>
+                    </li>
+                    <li>
+                        <a class="link" href="/schardt.dev/en/projects/">projects</a>
+                    </li>
+                    <li>
+                        <a class="link" href="/schardt.dev/en/publications/">publications</a>
+                    </li>
+                    <li>
+                        <a class="link" href="/schardt.dev/en/talks/">talks</a>
+                    </li>
+            </ul>
+        </nav>
+    </section>
+</header>
+
+<main class="tmpl-home">
+      <section class="content">
+            
+<h2>Hi, I'm Philipp!</h2>
+
+<img class="avatar" width="128px" height="128px" src="/schardt.dev/assets/philipp.jpg" alt="philipp" clear="left">
+
+<p>I'm a developer living and working in Saarbrücken, Germany.</p>
+
+<p>This website mainly provides an overview of the work I've done while I've been a developer, 
+student and research assistant. But it's also a place where I describe my experiments.</p>
+
+<p>My interest and research focus mainly on human computer interaction (HCI) and ubiquitous computing. 
+In particular I'm interested in understanding and developing new technologies to enhance the 
+usability and support people by using it. </p>
+
+<p>Since 2017 I've been working as a UX Software Engineer at <a href="https://ergosign.de" target="_blank" rel="noopener">Ergosign</a>. 
+I'm also pleased that I've been working for Ergosign as Technology Expert Web since 2019. 
+In this role I explore and test how new capabilites of the web can enhance the user experience.</p>
+
+<p>In 2014 I obtained a Bachelor of Science in Media Informatics at <ahref="https://www.uni-saarland.de/" target="_blank" rel="noopener" >Saarland University</a> with my thesis about 'Sensor-based hand posture recognition to develop dynamic adaptive user interfaces on smartphones'.
+Since 2017 I'm Master of Science in Media Informatics. I finished with a thesis about 'Towards an Ambient Assistive System Using Wrist-Worn Human Activity Recognition'.</p>
+
+<p>During my graduation, I was working as a research assistant (since 2012) in the <a href="https://umtl.cs.uni-saarland.de/" target="_blank" rel="noopener">Ubiquitous Media Technology Lab of the German Research Center for Artificial Intelligence (DFKI)</a> in Saarbrücken.</p>
+
+
+      </section>
+</main>
+
+<footer>
+    <div class="footer__social">
+
+    <span
+      class="icon"
+      style="--mask: url(/assets/icons/mail.svg);"
+    >
+        <a href="mailto:mail@schardt.dev" rel="noopener" target="_blank" rel="noopener" rel="me">
+            mail
+        </a>
+    </span>
+
+    <span
+      class="icon"
+      style="--mask: url(/assets/icons/github.svg);"
+    >
+        <a href="https://github.com/philippone" rel="noopener" target="_blank" rel="noopener" rel="me">
+            github
+        </a>
+    </span>
+
+    <span
+      class="icon"
+      style="--mask: url(/assets/icons/twitter.svg);"
+    >
+        <a href="https://twitter.com/_philippone" rel="noopener" target="_blank" rel="noopener" rel="me">
+            twitter
+        </a>
+    </span>
+
+    <span
+      class="icon"
+      style="--mask: url(/assets/icons/xing.svg);"
+    >
+        <a href="https://www.xing.com/profile/Philipp_Schardt4" rel="noopener" target="_blank" rel="noopener" rel="me">
+            xing
+        </a>
+    </span>
+
+</div>
+    <div class="footer__nav">
+        <a href="/de/"> German Version</a> 
+        |
+        <a href="/en/schardt.dev/impress">Impress</a> 
+ 
+   
+</div>
+</footer>
+
+    <!-- Current page: /schardt.dev/en/ -->
+  </body>
+  <script>
+    // Check that service workers are supported
+    if ('serviceWorker' in navigator) {
+      // Use the window load event to keep the page load performant
+      window.addEventListener('load', () => {
+        navigator
+          .serviceWorker
+          .register('/schardt.dev/sw.js');
+      });
+    }
+  </script>
+  <script type="module" src="/schardt.dev/assets/utils/theme.js"></script>
+</html>

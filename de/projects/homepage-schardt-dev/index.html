@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <title>schardt.dev — schardt.dev</title>
+        
+    <meta name="Description" content="Personal website of UX Software Engineer and Technical Expert Web Philipp Schardt from Saarbrücken, Saarland">
+    <meta name="keywords" content="Philipp,Schardt,Philipp Schardt,Developer,Entwickler,Software Engineer,Technical Expert Web,UX,UI,User Experience,Saarland,Saarbrücken"/>
+    <meta name="theme-color" content="#150909"/>
+    <meta name="color-scheme" content="light dark"/>
+    <link rel="apple-touch-icon" href="/schardt.dev/assets/pwa/icons/icon-192x192.png">
+    <link rel='manifest' href="/de/schardt.dev/manifest.json">
+    <link rel="stylesheet" href="/schardt.dev/styles/styles.css">
+  </head>
+  <body>
+
+    <button type="button" id="theme-toggle">toggle dark mode</button>
+
+    
+<header>
+    <section class="content">
+        <div>
+            <h1 class="home">
+                <a href="/de">schardt.dev</a>
+            </h1>
+        </div>
+
+        <nav>
+            
+            <ul>
+                    <li>
+                        <a class="link" href="/schardt.dev/de/">about</a>
+                    </li>
+                    <li>
+                        <a class="link" href="/schardt.dev/de/vita/">vita</a>
+                    </li>
+                    <li>
+                        <a class="link" href="/schardt.dev/de/projects/">projects</a>
+                    </li>
+                    <li>
+                        <a class="link" href="/schardt.dev/de/publications/">publications</a>
+                    </li>
+                    <li>
+                        <a class="link" href="/schardt.dev/de/talks/">talks</a>
+                    </li>
+            </ul>
+        </nav>
+    </section>
+</header>
+
+<main class="tmpl-post">
+      <section class="content">
+            
+
+
+
+<p class="post-date">
+    <time datetime="2020-07-28">28 Juli, 2020</time>
+    
+</p>
+<h1>schardt.dev</h1>
+
+    <ul class="post-technologies">
+        
+            <li>Web</li>
+            
+            <li>CSS Custom Properties</li>
+            
+            <li>Static Web Page</li>
+            
+            <li>11ty</li>
+            
+            <li>PWA</li>
+            
+            <li>Workbox</li>
+            
+            <li>Apache Server</li>
+            
+            <li>Open Source</li>
+            
+        </ul>
+    
+
+
+    <article>
+
+        <p>Auf meinem alten Webserver wurde vom Betreiber die PHP Version erhöht und die Webseite unter <a href="https://philippschardt.net">philipptschardt.net</a> funktionierte nicht mehr richtig, da die API zum Datenbankzugriff nicht mehr erlaubt war.</p>
+<p>Deshlab enschied ich mich meine Webseite neu aufzusetzen und so robust wie möglich zu gestalten. Das heißt sie soll so wenig wie möglich von anderen Systemen, Frameworks oder Versionen von Programmiersprachen abhänig sein. Da ich auch keine dynamischen Inhalte habe, konnte ich mich von der Datenbank trennen und die komplette Webseite statisch bauen.</p>
+<p>Die Liste an Features, die ich unterstützen wollte ist folgende:</p>
+<ul>
+<li>Neues, responsives Design</li>
+<li>Light/Dark Theme (CSS Custom Properties)</li>
+<li>Hohe Performance (statische Webseite)</li>
+<li>Mehrsprachig (Deutsch, Englisch)</li>
+<li>Progressive Web App Features: Installierbar, Offline, Caching</li>
+<li>Open Source</li>
+</ul>
+<p>Das neue Design ist an dem alten angelehnt, wurde jedoch modernisiert und funktioniert jetzt auch responsiv. Zudem kann man zwischen hellem und dunkelem Theme hin und her schalten. Beim Öffnen der Seite wird zudem die vom Nutzer gewählte Eistellung im Betriebssystem übernommen. Die Erkennung erfolgt dabei über <code>matchMedia(&quot;(prefers-color-scheme: dark)&quot;)</code> und kann genauer im <a href="https://github.com/philippone/schardt.dev/blob/master/src/assets/utils/theme.js">Repository</a> eingesehen werden. Der Wechsel von hell zu dunkel wird durch eine CSS Klasse auf dem Document gehändelt, der die Farben in den CSS Custom Properties austauscht.</p>
+<div class="figure-container">
+    <figure>
+        <a href="/schardt.dev/assets/pwa/screenshots/desktop.png">
+            <img src="/schardt.dev/assets/pwa/screenshots/desktop.png"alt="Desktop" />
+        </a>
+        <figcaption > Desktop Version </figcaption>
+    </figure>
+    <div class="figure-seperator"></div>
+    <figure>
+        <a href="/schardt.dev/assets/pwa/screenshots/mobile.png">
+            <img src="/schardt.dev/assets/pwa/screenshots/mobile.png"alt="Mobile" style="width: 35%" />
+        </a>
+        <figcaption > Mobile Version </figcaption>
+    </figure>
+</div>
+<p>Um die Webseite statisch zu bauen nutze ich <a href="https://www.11ty.dev/">11ty</a>, der verspricht ein einfacher statischer Site Generator zu sein. Und tatsächlich bin ich von der Einfachheit positiv überrascht. Daten können leicht im <code>JSON</code>-Format gespeichert und genutzt werden. Die Beiträge sind in <a href="https://markdown.de/"><code>Markdown</code></a> geschrieben und die Templates in <a href="https://mozilla.github.io/nunjucks/"><code>Nunjucks</code></a>. Die Beiträge werden zudem in Englisch und in Deutsch in dem betreffenden Unterordner ('de' oder 'en') angelegt und später unter dem Unterverzeichnis ausgeliefert. Dazu müssen Weiterleitungsregeln über die <a href="https://github.com/philippone/schardt.dev/blob/master/src/.htaccess"><code>.htaccess</code> Datei</a> des Apache Server eingestellt werden. Der Server erkennt über den http-header die aktuell eingestellte Sprache und liefert entweder Deutsch oder Englisch (default) aus.</p>
+<p>Zum Schluss wurde noch ein Manifest sowie ein Service Worker hinzugefügt, sodass man die Seite auch als PWA installieren kann. Zur Generierung des Service Workers, vor allem zur bequemen Auswahl welche Daten geprecached werden sollen, nutze ich <a href="https://developers.google.com/web/tools/workbox">Workbox</a>. Dies ist eine die Service Woker Libary von Google und zudem die einzige Abhänigkeit in der gebauten Webseite.</p>
+<p>Diese Einfachheit und Unabhänigkeit spiegelt sich auch im Lighthouse Testbericht wieder:</p>
+<figure>
+        <a href="/schardt.dev/assets/projects/homepage-schardt-dev/schardt-dev-lighthouse.png">
+            <img src="/schardt.dev/assets/projects/homepage-schardt-dev/schardt-dev-lighthouse.png"alt="lighthosue results" style="width: 35%" />
+        </a>
+        <figcaption > Lighthouse</figcaption>
+</figure>
+
+
+    </article>
+
+    <div class="post-info">
+    
+    </div>
+
+
+
+    <div class="subnav">
+        <div class="prev">
+            
+                <a href="/de/projects/xdesk-pwa/">← xDesk PWA</a>
+            
+        </div>
+
+        <div class="next">
+            
+        </div>
+    </div>
+      </section>
+</main>
+
+<footer>
+    <div class="footer__bio">
+    <div class="footer__bio__avatar">
+        <img src="/schardt.dev/assets/philipp.jpg" alt="philipp">
+    </div>
+    <div class="footer__bio__info">
+        <span>Philipp Schardt</span>
+        <span class="footer__bio__info__title">UX Software Engineer</span>
+        <span class="footer__bio__info__title">Technology Expert Web</span>
+    </div>
+</div>
+    <div class="footer__social">
+
+    <span
+      class="icon"
+      style="--mask: url(/assets/icons/mail.svg);"
+    >
+        <a href="mailto:mail@schardt.dev" rel="noopener" target="_blank" rel="noopener" rel="me">
+            mail
+        </a>
+    </span>
+
+    <span
+      class="icon"
+      style="--mask: url(/assets/icons/github.svg);"
+    >
+        <a href="https://github.com/philippone" rel="noopener" target="_blank" rel="noopener" rel="me">
+            github
+        </a>
+    </span>
+
+    <span
+      class="icon"
+      style="--mask: url(/assets/icons/twitter.svg);"
+    >
+        <a href="https://twitter.com/_philippone" rel="noopener" target="_blank" rel="noopener" rel="me">
+            twitter
+        </a>
+    </span>
+
+    <span
+      class="icon"
+      style="--mask: url(/assets/icons/xing.svg);"
+    >
+        <a href="https://www.xing.com/profile/Philipp_Schardt4" rel="noopener" target="_blank" rel="noopener" rel="me">
+            xing
+        </a>
+    </span>
+
+</div>
+    <div class="footer__nav">
+        <a href="/en/projects/homepage-schardt-dev/"> Englische Version</a> 
+        |
+        <a href="/de/schardt.dev/impress">Impress</a> 
+ 
+   
+</div>
+</footer>
+
+    <!-- Current page: /schardt.dev/de/projects/homepage-schardt-dev/ -->
+  </body>
+  <script>
+    // Check that service workers are supported
+    if ('serviceWorker' in navigator) {
+      // Use the window load event to keep the page load performant
+      window.addEventListener('load', () => {
+        navigator
+          .serviceWorker
+          .register('/schardt.dev/sw.js');
+      });
+    }
+  </script>
+  <script type="module" src="/schardt.dev/assets/utils/theme.js"></script>
+</html>
