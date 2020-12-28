@@ -4,6 +4,7 @@
   "description": "Personal Hompage of Philipp Schardt",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "build:eleventy": "eleventy",
     "build": "eleventy && npm run sass:build && npm run build:sw",
     "watch": "eleventy --watch && npm run sass:watch",
     "serve": "eleventy --serve && npm run sass:watch && npm run build:sw",
