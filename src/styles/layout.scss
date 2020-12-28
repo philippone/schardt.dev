@@ -13,7 +13,6 @@ body {
     "Arial", "sans-serif";
   color: var(--ps--color-primary, black);
   background-color: var(--ps-color-primary);
-  ;
 }
 
 .transition-bg {
@@ -23,7 +22,13 @@ body {
 html {
   height: 100%;
 
-  background: url(/styles/assets/bg.jpg) repeat scroll 0% 0% transparent;
+  //background image set inline to support pathprefix
+  //background: url(/styles/assets/bg.jpg) repeat scroll 0% 0% transparent;
+  background-position-x: 0%;
+  background-position-y: 0%;
+  background-repeat: repeat;
+  background-attachment: scroll;
+  background-color: transparent;
 }
 
 ::selection,
@@ -33,27 +38,27 @@ html {
 }
 
 #theme-toggle {
-    outline: 0;
-    background: transparent;
-    color: var(--ps--color-primary-invert);
-    display: inline-block;
-    position: absolute;
-    right: 0.5rem;
-    top: 0.5rem;
-    font-size: 0.7rem;
-    border: 1px solid transparent;
+  outline: 0;
+  background: transparent;
+  color: var(--ps--color-primary-invert);
+  display: inline-block;
+  position: absolute;
+  right: 0.5rem;
+  top: 0.5rem;
+  font-size: 0.7rem;
+  border: 1px solid transparent;
 
-    &:focus, &:hover {
-      border: 1px solid var(--ps--color-primary-invert);
-    }
-    &:active {
-      background: var(--ps-color-red);
-    }
+  &:focus,
+  &:hover {
+    border: 1px solid var(--ps--color-primary-invert);
+  }
+  &:active {
+    background: var(--ps-color-red);
+  }
 }
 
 header,
 footer {
-  
   color: white;
   flex: 0 0 auto;
 }
