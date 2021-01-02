@@ -3,7 +3,7 @@ layout: layouts/post.njk
 tags: ['publication', 'professional']
 date: 2020-05-13
 title: Automated Visual Regression Testing for Responsive Web Technologies
-teaser: Review of Peter Kuhns Bachelor Thesis at Ergosign
+teaser: Supervision of Peter Kuhns Bachelor Thesis at Ergosign
 type: Review
 authors:
     - Pether Kuhn
