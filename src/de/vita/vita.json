@@ -30,9 +30,10 @@
       "start": "2012-10-01",
       "end": "2015-09",
       "title": "Hilfswissenschaftler",
-      "employer": "DFKI",
+      "employer": "Deutsches Forschungszentrum für Künstliche Intelligenz (DFKI)",
       "location": "Saarbrücken",
-      "description": "Forschung, Entwicklung und Design von multi-modalen Benutzerschnittstellen und Interaktionstechniken am Ubiquitous Media Technologie Lab (UMTL) unter der Leitung von Prof. Dr. Antonio Krüger </br> Betreuer: Prof. Dr. Markus Löchtefeld",
+      "description": "Forschung, Entwicklung und Design von multi-modalen Benutzerschnittstellen und Interaktionstechniken am Ubiquitous Media Technologie Lab (UMTL) unter der Leitung von Prof. Dr. Antonio Krüger",
+      "advisor": "Prof. Dr. Markus Löchtefeld",
       "weekhours": 10
     },
     {
@@ -56,9 +57,10 @@
       "start": "2016-05-01",
       "end": "2017-09-30",
       "title": "Hilfswissenschaftler",
-      "employer": "DFKI",
+      "employer": "Deutsches Forschungszentrum für Künstliche Intelligenz (DFKI)",
       "location": "Saarbrücken",
-      "description": "Forschung, Entwicklung und Design von multi-modalen Benutzerschnittstellen und Interaktionstechniken am Ubiquitous Media Technologie Lab (UMTL) unter der Leitung von Prof. Dr. Antonio Krüger </br> Betreuer: Frederik Wiehr",
+      "description": "Forschung, Entwicklung und Design von multi-modalen Benutzerschnittstellen und Interaktionstechniken am Ubiquitous Media Technologie Lab (UMTL) unter der Leitung von Prof. Dr. Antonio Krüger",
+      "advisor":"Frederik Wiehr",
       "weekhours": 12
     },
     {
@@ -78,7 +80,7 @@
     },
     {
       "start": "2019-10-01",
-      "title": "Technical Expert Web",
+      "title": "Technology Expert Web",
       "employer": "Ergosign GmbH",
       "location": "Saarbrücken",
       "description": "Forschung und Qualitätssicherung der Web Abteilung, Defnition der Best Practices zu Entwicklung, Dokumentation, Testing und Tool-Chain"
@@ -106,7 +108,9 @@
       "location": "Universität des Saarlandes, Saarbrücken",
       "description": "Human Computer Interaction, Ubiquitous Computing, User Interface Design",
       "thesis": "Sensor-based hand posture recognition to develop dynamic adaptive user interfaces on smartphones",
-      "thesislink": "/publications/bachelor-thesis/"
+      "thesislink": "/publications/bachelor-thesis/",
+      "supervisor": ["Prof. Dr. Antonio Krüger", "Prof. Dr. Sebastian Boring"],
+      "advisor": "Prof. Dr. Markus Löchtefeld"
     },
     {
       "start": "2014-04-01",
@@ -115,7 +119,9 @@
       "location": "Universität des Saarlandes, Saarbrücken",
       "description": "Machine Learning, Human Computer Interaction, Interactive Systems",
       "thesis": "Towards an Ambient Assistive System Using Wrist-Worn Human Activity Recognition",
-      "thesislink": "/publications/master-thesis/"
+      "thesislink": "/publications/master-thesis/",
+      "supervisor": ["Prof. Dr. Antonio Krüger", "Prof. Dr. Markus Löchtefeld"],
+      "advisor": "Frederik Wiehr"
     }
   ],
   "honorary": [

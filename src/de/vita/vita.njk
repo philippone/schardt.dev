@@ -31,6 +31,12 @@ eleventyNavigation:
                                 {{item.description | safe }}
                             </div>
                         {% endif %}
+                        {% if item.advisor %}
+                                <div class="advisor">
+                                <span>Advisor:</span>
+                                <span>{{item.advisor}}</span>
+                                </div>
+                            {% endif %}
                     </div>
                 </li>
                 {% endfor%}
@@ -63,6 +69,20 @@ eleventyNavigation:
                             {% if item.thesis %}
                                 <div class="description">
                                     Abschlussarbeit: <a href="{{ '/de' + item.thesislink | url }}">{{item.thesis}}</a>
+                                </div>
+                            {% endif %}
+                            {% if item.supervisor %}
+                                <div class="supervisor">
+                                    <span>Supervisor:</span>
+                                    {% for s in item.supervisor%}
+                                        <span>{{s}}</span>{% if not loop.last %},{% endif%}
+                                    {% endfor %}
+                                </div>
+                            {% endif %}
+                            {% if item.advisor %}
+                                <div class="advisor">
+                                <span>Advisor:</span>
+                                <span>{{item.advisor}}</span>
                                 </div>
                             {% endif %}
                         </div>

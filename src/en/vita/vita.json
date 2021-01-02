@@ -11,7 +11,7 @@
         {
             "start": "2011-10-01",
             "end": "2012-02-01",
-            "title": "Research Assistant / Tutor",
+            "title": "Student Teaching Assistant / Tutor",
             "employer": "Saarland University",
             "location": "Saarbrücken",
             "description": "Supervision and realisation of exercise groups of lecture 'Grundlagen der Medieninformatik'"
@@ -19,7 +19,7 @@
         {
             "start": "2012-04-01",
             "end": "2012-08-01",
-            "title": "Research Assistant / Tutor",
+            "title": "Student Teaching Assistant / Tutor",
             "employer": "Saarland University",
             "location": "Saarbrücken",
             "description": "Supervision and realisation of exercise groups of lecture 'Ubiquitous Media'"
@@ -30,7 +30,8 @@
             "title": "Research Assistant",
             "employer": "German Research Center for Artificial Intelligence (DFKI)",
             "location": "Saarbrücken",
-            "description": "Research, design and development of multi-modal user and interaction interfaces at the Ubiquitous Media Technologie Lab of Prof. Dr. Antonio Krüger </br> Advisor: Prof. Dr. Markus Löchtefeld"
+            "description": "Research, design and development of multi-modal user and interaction interfaces at the Ubiquitous Media Technologie Lab led by Prof. Dr. Antonio Krüger",
+            "advisor": "Prof. Dr. Markus Löchtefeld"
         },
         {
             "start": "2015-10-15",
@@ -54,7 +55,8 @@
             "title": "Research Assistant",
             "employer": "German Research Center for Artificial Intelligence (DFKI)",
             "location": "Saarbrücken",
-            "description": "Research, design and development of multi-modal interfaces with a focus on Machine Learning at the Ubiquitous Media Technologie Lab of Prof. Dr. Antonio Krüger </br> Advisor: Frederik Wiehr"
+            "description": "Research, design and development of multi-modal interfaces with a focus on Machine Learning at the Ubiquitous Media Technologie Lab led by Prof. Dr. Antonio Krüger",
+            "advisor": "Frederik Wiehr"
         },
         {
             "start": "2017-03-01",
@@ -73,7 +75,7 @@
         },
         {
             "start": "2019-10-01",
-            "title": "Technical Expert Web",
+            "title": "Technology Expert Web",
             "employer": "Ergosign GmbH",
             "location": "Saarbrücken",
             "description": "Research and quality insurance of the web development division, i.e. define the latest best practices of development, documentation, testing and tool chain."
@@ -102,7 +104,9 @@
             "grade": 2.1,
             "description": "Human Computer Interaction, Ubiquitous Computing, User Interface Design",
             "thesis": "Sensor-based hand posture recognition to develop dynamic adaptive user interfaces on smartphones",
-            "thesislink": "/publications/bachelor-thesis/"
+            "thesislink": "/publications/bachelor-thesis/",
+            "supervisor": ["Prof. Dr. Antonio Krüger", "Prof. Dr. Sebastian Boring"],
+            "advisor": "Prof. Dr. Markus Löchtefeld"
         },
         {
             "start": "2014-04-01",
@@ -111,7 +115,9 @@
             "location": "Saarland University, Saarbrücken",
             "description": "Machine Learning, Human Computer Interaction, Interactive Systems",
             "thesis": "Towards an Ambient Assistive System Using Wrist-Worn Human Activity Recognition",
-            "thesislink": "/publications/master-thesis/"
+            "thesislink": "/publications/master-thesis/",
+            "supervisor": ["Prof. Dr. Antonio Krüger", "Prof. Dr. Markus Löchtefeld"],
+            "advisor": "Frederik Wiehr"
         }
     ],
     "honorary": [

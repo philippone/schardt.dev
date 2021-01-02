@@ -78,9 +78,13 @@
         color: var(--ps--color-secondary);
       }
 
-      .description {
+      .description, .supervisor, .advisor {
         font-size: var(--font-size-m);
+
+        &:not(:last-child) {
+          margin-bottom: 0.5rem;
+        }
       }
     }
   }
-}
+} 
