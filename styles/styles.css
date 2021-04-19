@@ -358,8 +358,11 @@ footer .footer__nav {
   font-size: var(--font-size-m);
   color: var(--ps--color-secondary);
 }
-.tmpl-vita ul li .description {
+.tmpl-vita ul li .description, .tmpl-vita ul li .supervisor, .tmpl-vita ul li .advisor {
   font-size: var(--font-size-m);
+}
+.tmpl-vita ul li .description:not(:last-child), .tmpl-vita ul li .supervisor:not(:last-child), .tmpl-vita ul li .advisor:not(:last-child) {
+  margin-bottom: 0.5rem;
 }
 
 @media print {
