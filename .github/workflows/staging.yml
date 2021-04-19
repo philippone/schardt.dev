@@ -27,10 +27,10 @@ jobs:
       run: npm ci
     
     - name: Build Webpage 1
-      run: npm run build:eleventy -- --pathprefix "schardt.dev" 
+      run: npm run build:11ty -- --pathprefix "schardt.dev" 
     
     - name: Build Webpage 2
-      run: npm run sass:build && npm run build:sw
+      run: npm run build:sass && npm run build:sw
 
     - name: Deploy github pages
       uses: JamesIves/github-pages-deploy-action@3.7.1
