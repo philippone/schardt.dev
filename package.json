@@ -12,7 +12,7 @@
     "serve": "npm-run-all clean build:sass -p serve:11ty watch:sass",
     "debug": "DEBUG=* eleventy",
     "build:sass": "sass src/styles/styles.scss _site/styles/styles.css",
-    "watch:sass": "npm run sass:build -- --watch",
+    "watch:sass": "npm run build:sass -- --watch",
     "build:sw": "workbox injectManifest workbox-config.js"
   },
   "author": "Philipp Schardt",

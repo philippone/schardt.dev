@@ -2,12 +2,14 @@
   "de": {
     "language": "Deutsch",
     "languageSwitch": "Englische Version",
-    "impint": "Impressum"
+    "imprint": "Impressum",
+    "toggleDarkMode": "Dunkelmodus an|aus"
   },
 
   "en": {
     "language": "English",
     "languageSwitch": "German Version",
-    "impint": "Imprint"
+    "imprint": "Imprint",
+    "toggleDarkMode": "toggle dark mode"
   }
 }
