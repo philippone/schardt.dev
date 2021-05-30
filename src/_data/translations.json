@@ -1,11 +1,13 @@
 {
   "de": {
     "language": "Deutsch",
-    "languageSwitch": "Englische Version"
+    "languageSwitch": "Englische Version",
+    "impint": "Impressum"
   },
 
   "en": {
     "language": "English",
-    "languageSwitch": "German Version"
+    "languageSwitch": "German Version",
+    "impint": "Imprint"
   }
 }
