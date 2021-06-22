@@ -79,6 +79,13 @@
             "employer": "Ergosign GmbH",
             "location": "Saarbrücken",
             "description": "Research and quality insurance of the web development division, i.e. define the latest best practices of development, documentation, testing and tool chain."
+        },
+        {
+            "start": "2021-07-01",
+            "title": "Senior UX Software Engineer",
+            "employer": "Ergosign GmbH",
+            "location": "Saarbrücken",
+            "description": "Development of modern user interfaces in agile collaboration with UX Designers"
         }
     ],
     "internship": [
