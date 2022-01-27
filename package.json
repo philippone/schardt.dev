@@ -30,7 +30,7 @@
     "workbox-cli": "6.4.2"
   },
   "optionalDependencies": {
-    "node-sass": "6.0.1"
+    "node-sass": "7.0.1"
   },
   "private": true,
   "engines": {
