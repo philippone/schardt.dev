@@ -10,7 +10,8 @@
     "Entwickler",
     "Software Engineer",
     "Technology Expert Web",
-    "UX", "UI",
+    "UX",
+    "UI",
     "User Experience",
     "Saarland",
     "Saarbrücken"
@@ -31,7 +32,7 @@
     "title": "UX Software Engineer",
     "subtitle": "Technology Expert Web",
     "bio": "",
-    "avatar": "/assets/philipp.jpg",
+    "avatar": "/assets/philipp.webp",
     "social": {
       "mail": "mailto:mail@schardt.dev",
       "github": "https://github.com/philippone",
