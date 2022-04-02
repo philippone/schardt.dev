@@ -17,24 +17,24 @@
   },
   "author": "Philipp Schardt",
   "devDependencies": {
-    "@11ty/eleventy": "1.0.0-canary.44",
+    "@11ty/eleventy": "2.0.0-canary.4",
     "@11ty/eleventy-navigation": "^0.3.2",
     "@11ty/eleventy-plugin-syntaxhighlight": "4.0.0",
-    "eslint": "^8.7.0",
+    "eslint": "^8.12.0",
     "husky": "^7.0.4",
     "moment": "^2.29.1",
     "npm-run-all": "^4.1.5",
-    "prettier": "^2.5.1",
+    "prettier": "^2.6.2",
     "rimraf": "^3.0.2",
-    "sass": "^1.49.0",
-    "workbox-cli": "6.4.2"
+    "sass": "^1.49.11",
+    "workbox-cli": "6.5.2"
   },
   "optionalDependencies": {
     "node-sass": "7.0.1"
   },
   "private": true,
   "engines": {
-    "node": "13.x"
+    "node": "17.x"
   },
   "browserslist": [
     "last 2 versions",
