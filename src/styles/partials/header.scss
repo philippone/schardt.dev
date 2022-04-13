@@ -14,18 +14,14 @@ header {
       flex-wrap: wrap;
       align-items: center;
       justify-content: flex-end;
+      gap: var(--ps-spacing-s);
     }
 
     li {
       font-size: var(--font-size-xl);
-      margin-top: 0.5rem;
 
       .link::before {
         content: '_';
-      }
-
-      &:not(:last-of-type) {
-        margin-right: var(--ps-spacing-s);
       }
 
       &.active {
