@@ -89,7 +89,15 @@
     },
     {
       "start": "2021-07-01",
+      "end": "2023-12-31",
       "title": "Senior UX Software Engineer",
+      "employer": "Ergosign GmbH",
+      "location": "Saarbrücken",
+      "description": "Architektur-Design und agile Entwicklung von modernen User Interfaces und Benutzerschnittstellen"
+    },
+    {
+      "start": "2024-01-01",
+      "title": "Lead UX Software Engineer",
       "employer": "Ergosign GmbH",
       "location": "Saarbrücken",
       "description": "Architektur-Design und agile Entwicklung von modernen User Interfaces und Benutzerschnittstellen"
